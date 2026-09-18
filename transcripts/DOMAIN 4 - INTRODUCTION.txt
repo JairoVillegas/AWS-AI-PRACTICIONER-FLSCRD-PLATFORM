@@ -1,0 +1,17 @@
+DOMAIN 4 - INTRODUCTION
+
+Let's get started with domain 4, which covers the guidelines for responsible AI. Domain 4 is broken into two task statements that we will discuss over the next few lessons.
+
+Task statement 4.1, explain the development of AI systems that are responsible.
+
+Task statement 4.2, recognize the importance of transparent and explainable models.
+
+For the first task statement, you will need to understand the concept of responsible AI. You also must be able to identify the features and characteristics of responsible AI systems and how to use the tools that can help. You'll need to understand how responsible AI principles influence model selection, risk assessments, and dataset characteristics.
+
+Finally, you must understand the concepts of bias and variance in the context of responsible AI. You'll need to understand the tools that you can use to monitor and detect bias and assess a model's trustworthiness and truthfulness.
+
+For the second task statement, you'll need to understand a big challenge for responsible AI, which is the transparency and explainability of a model's inference. You'll need to understand what makes a model transparent or explainable, and tools that can be used to help explain a model's output. You must be able to identify the tradeoffs of a model safety as compared to its transparency.
+
+Finally, you'll understand how human-centric design can help create AI that is more explainable.
+
+Over the next few lessons, I will address each task statement individually breaking down each objective. Let's get started evaluating your readiness for the exam in the next lesson, where we will cover the first task statement from domain 4.

@@ -1,0 +1,1119 @@
+{
+  "version": "1.0",
+  "nota": "Las tarjetas referencian estas entradas por su campo id. Cada definicion debe entenderse sin contexto previo.",
+  "entries": [
+    {
+      "id": "inteligencia-artificial",
+      "termino": "Inteligencia artificial (AI)",
+      "definicion": "Campo de la informatica dedicado a resolver problemas cognitivos asociados normalmente a la inteligencia humana, como aprender, crear y reconocer imagenes. Su meta es crear un sistema que aprende por si mismo y deriva significado de los datos.",
+      "aliases": ["AI", "IA", "artificial intelligence"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "machine-learning",
+      "termino": "Machine learning (ML)",
+      "definicion": "Rama de la IA que usa datos y algoritmos para imitar la forma en que aprenden los humanos, mejorando su exactitud de forma gradual. Es la ciencia de desarrollar algoritmos y modelos estadisticos que realizan tareas complejas sin instrucciones explicitas.",
+      "aliases": ["ML", "aprendizaje automatico"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "deep-learning",
+      "termino": "Deep learning",
+      "definicion": "Tipo de machine learning que usa redes neuronales inspiradas en el cerebro humano, organizadas en capas, para procesar informacion. Es el unico tipo de ML que usa redes neuronales.",
+      "aliases": ["aprendizaje profundo"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "red-neuronal",
+      "termino": "Red neuronal (neural network)",
+      "definicion": "Estructura algoritmica formada por capas de nodos que simulan el comportamiento de las neuronas del cerebro, enviandose informacion entre si.",
+      "aliases": ["neural network"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "nodo",
+      "termino": "Nodo (node)",
+      "definicion": "Modulo de software dentro de una red neuronal que simula una neurona. Cada nodo asigna de forma autonoma pesos a cada feature que recibe.",
+      "aliases": ["node", "neurona"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "capas-red-neuronal",
+      "termino": "Capas de una red neuronal",
+      "definicion": "Una red neuronal profunda tiene una capa de entrada (input layer), varias capas ocultas (hidden layers) y una capa de salida (output layer). La informacion fluye hacia adelante, de la entrada a la salida.",
+      "aliases": ["input layer", "hidden layer", "output layer"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "peso",
+      "termino": "Peso (weight)",
+      "definicion": "Valor numerico que indica cuanta importancia le da el modelo a una feature. Durante el entrenamiento los pesos se ajustan repetidamente para minimizar el error.",
+      "aliases": ["weight", "pesos"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "parametro",
+      "termino": "Parametro (parameter)",
+      "definicion": "Valor interno del modelo que el algoritmo ajusta por si mismo durante el entrenamiento. En una regresion lineal son la pendiente y el intercepto; en deep learning son los pesos.",
+      "aliases": ["parameter", "parametros"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "hiperparametro",
+      "termino": "Hiperparametro (hyperparameter)",
+      "definicion": "Parametro externo al modelo que afecta su rendimiento y que el cientifico de datos fija antes de entrenar. Por ejemplo, cuantas capas y cuantos nodos tendra una red neuronal.",
+      "aliases": ["hyperparameter", "hiperparametros"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "feature",
+      "termino": "Feature",
+      "definicion": "Cada caracteristica de entrada que el modelo usa para aprender o predecir. Se puede pensar como una columna de una tabla o un pixel de una imagen.",
+      "aliases": ["features", "caracteristica", "atributo"],
+      "dominios": [1, 3, 4]
+    },
+    {
+      "id": "inferencia",
+      "termino": "Inferencia (inference)",
+      "definicion": "La salida que produce un modelo ya entrenado al procesar datos nuevos que no vio durante el entrenamiento. Es un resultado probabilistico, una conjetura educada, no una certeza.",
+      "aliases": ["inference", "inferencias"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "entrenamiento",
+      "termino": "Entrenamiento (training)",
+      "definicion": "Proceso de dar datos conocidos al algoritmo para que encuentre la correlacion entre las features de entrada y la salida esperada, ajustando sus parametros internos hasta producir de forma fiable el resultado esperado.",
+      "aliases": ["training"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "algoritmo",
+      "termino": "Algoritmo",
+      "definicion": "Formula matematica que define la relacion entre las entradas y las salidas de un modelo. Es el punto de partida: el modelo es el algoritmo ya entrenado con datos.",
+      "aliases": ["algorithm"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "modelo",
+      "termino": "Modelo",
+      "definicion": "Algoritmo entrenado, capaz de hacer predicciones exactas y producir salidas a partir de datos nuevos que no vio en el entrenamiento.",
+      "aliases": ["model"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "probabilistico",
+      "termino": "Probabilistico",
+      "definicion": "Que determina la verosimilitud de algo en lugar de dar una respuesta fija. Los modelos de ML son probabilisticos: aprenden, se adaptan e incorporan azar, asi que entradas identicas pueden dar resultados distintos.",
+      "aliases": ["probabilistic"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "deterministico",
+      "termino": "Deterministico",
+      "definicion": "Que produce siempre la misma salida para la misma entrada. Un sistema basado en reglas es deterministico mientras nadie cambie las reglas.",
+      "aliases": ["deterministic", "determinismo"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "sistema-basado-en-reglas",
+      "termino": "Sistema basado en reglas (rule-based)",
+      "definicion": "Aplicacion que decide segun reglas escritas explicitamente por una persona, sin IA. Por ejemplo: aprobar automaticamente prestamos de hasta 10.000 dolares a quien tenga puntaje de credito superior a 750.",
+      "aliases": ["rule-based system"],
+      "dominios": [1]
+    },
+    {
+      "id": "interpretabilidad",
+      "termino": "Interpretabilidad (interpretability)",
+      "definicion": "Grado en que se puede comprender el mecanismo interno de un modelo y explicar matematicamente por que produce una prediccion. Las redes neuronales complejas son poco interpretables.",
+      "aliases": ["interpretability"],
+      "dominios": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "explicabilidad",
+      "termino": "Explicabilidad (explainability)",
+      "definicion": "Capacidad de describir que hace un modelo sin conocer exactamente como lo hace, tratandolo como una caja negra y observando sus salidas frente a ciertas entradas.",
+      "aliases": ["explainability"],
+      "dominios": [3, 4, 5]
+    },
+    {
+      "id": "regresion-lineal",
+      "termino": "Regresion lineal",
+      "definicion": "Algoritmo que busca la linea que mejor se ajusta a los datos. Con la ecuacion y = mx + b, la pendiente m y el intercepto b son los parametros que se ajustan iterativamente para minimizar los errores.",
+      "aliases": ["linear regression"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "regresion-logistica",
+      "termino": "Regresion logistica",
+      "definicion": "Algoritmo que mide la probabilidad de que ocurra un evento. Devuelve un valor entre cero y uno y usa funciones logaritmicas para calcular la linea de regresion.",
+      "aliases": ["logistic regression"],
+      "dominios": [1]
+    },
+    {
+      "id": "analisis-de-regresion",
+      "termino": "Analisis de regresion",
+      "definicion": "Tecnica que estima el valor de una variable objetivo continua a partir de una o mas variables correlacionadas con ella. Aplicada a datos historicos permite pronosticar valores futuros.",
+      "aliases": ["regression analysis"],
+      "dominios": [1]
+    },
+    {
+      "id": "time-series",
+      "termino": "Time series data",
+      "definicion": "Datos donde cada registro lleva un timestamp y se almacenan secuencialmente. Son clave para entrenar modelos que predicen tendencias futuras y pueden crecer mucho segun la frecuencia de muestreo.",
+      "aliases": ["datos de series temporales", "serie temporal"],
+      "dominios": [1]
+    },
+    {
+      "id": "anomalia",
+      "termino": "Anomalia",
+      "definicion": "Desviacion respecto del patron esperado en los datos. Se detecta porque la IA reconoce el patron normal y nota cuando algo se sale de el.",
+      "aliases": ["anomaly"],
+      "dominios": [1]
+    },
+    {
+      "id": "deteccion-de-anomalias",
+      "termino": "Deteccion de anomalias",
+      "definicion": "Identificacion de elementos, eventos u observaciones raras que difieren significativamente del resto de los datos. Se usa por ejemplo para detectar sensores averiados o errores medicos.",
+      "aliases": ["anomaly detection"],
+      "dominios": [1]
+    },
+    {
+      "id": "computer-vision",
+      "termino": "Computer vision",
+      "definicion": "Aplicaciones de IA que procesan imagenes y video para identificar objetos, reconocer caras, clasificar, recomendar, monitorear y detectar.",
+      "aliases": ["vision por computadora"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "nlp",
+      "termino": "NLP (Natural Language Processing)",
+      "definicion": "Rama de la IA que permite a las maquinas entender, interpretar y generar lenguaje humano de forma natural. Es la tecnologia detras de Alexa y de los chatbots.",
+      "aliases": ["procesamiento de lenguaje natural", "natural language processing"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "traduccion-automatica",
+      "termino": "Traduccion automatica",
+      "definicion": "Traduccion de texto entre idiomas sin intervencion humana. Va mas alla de traducir palabra por palabra: analiza todos los elementos del texto y como las palabras se influyen entre si para transmitir el significado.",
+      "aliases": ["machine translation"],
+      "dominios": [1]
+    },
+    {
+      "id": "ia-generativa",
+      "termino": "IA generativa (generative AI)",
+      "definicion": "Subconjunto del deep learning capaz de mantener conversaciones aparentemente inteligentes y generar contenido original como texto, imagenes, video, musica y codigo, en lugar de solo clasificar o predecir.",
+      "aliases": ["generative AI", "gen AI"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "prompt",
+      "termino": "Prompt",
+      "definicion": "Conjunto especifico de entradas que proporciona el usuario para guiar al modelo hacia la respuesta o salida deseada. En terminos de transformers, es la secuencia de entrada.",
+      "aliases": ["prompts"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "completion",
+      "termino": "Completion",
+      "definicion": "La salida que el modelo genera en respuesta a un prompt.",
+      "aliases": ["completions"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "transformer",
+      "termino": "Transformer",
+      "definicion": "Arquitectura de red neuronal que convierte una secuencia de entrada en una secuencia de salida. A diferencia de las redes neuronales clasicas, que procesan palabra por palabra, el transformer procesa la secuencia en paralelo, lo que acelera el entrenamiento y permite datasets mucho mayores.",
+      "aliases": ["transformers", "transformer network"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "llm",
+      "termino": "LLM (Large Language Model)",
+      "definicion": "Modelo de lenguaje de gran escala, con miles de millones de features, que captura un rango amplio del conocimiento humano y por eso es muy flexible en las tareas que puede realizar.",
+      "aliases": ["large language model", "modelo de lenguaje grande"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "secuencia",
+      "termino": "Secuencia (sequence)",
+      "definicion": "En terminos de IA, una cadena de texto u otros datos ordenados. Los modelos de IA generativa se preentrenan con datasets enormes de secuencias.",
+      "aliases": ["sequence"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "tokenizacion",
+      "termino": "Tokenizacion",
+      "definicion": "Tecnica de procesamiento que descompone el texto en unidades individuales de palabras o frases. Permite derivar features a partir de datos no estructurados.",
+      "aliases": ["tokenization", "tokenizar"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "gpu",
+      "termino": "GPU (Graphics Processing Unit)",
+      "definicion": "Procesador especializado en calculos masivos en paralelo. Es el recurso de computo que hace viable entrenar redes neuronales, y su disponibilidad barata en la nube es lo que popularizo el deep learning.",
+      "aliases": ["GPUs", "unidad de procesamiento grafico"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "datos-estructurados",
+      "termino": "Datos estructurados",
+      "definicion": "Datos almacenados como filas en una tabla con columnas, donde las columnas sirven como features. Son los mas faciles de entender y procesar. Viven en archivos CSV o bases relacionales y se consultan con SQL.",
+      "aliases": ["structured data"],
+      "dominios": [1]
+    },
+    {
+      "id": "datos-semiestructurados",
+      "termino": "Datos semiestructurados",
+      "definicion": "Datos que no siguen del todo las reglas tabulares: cada elemento puede tener atributos distintos o faltantes. El ejemplo tipico es un archivo JSON, donde las features son pares clave-valor.",
+      "aliases": ["semi-structured data"],
+      "dominios": [1]
+    },
+    {
+      "id": "datos-no-estructurados",
+      "termino": "Datos no estructurados",
+      "definicion": "Datos que no se ajustan a ningun modelo de datos concreto ni se pueden guardar en formato de tabla: imagenes, video, archivos de texto o publicaciones en redes sociales.",
+      "aliases": ["unstructured data"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "json",
+      "termino": "JSON (JavaScript Object Notation)",
+      "definicion": "Formato de texto que representa datos como pares clave-valor. Es el ejemplo tipico de datos semiestructurados.",
+      "aliases": [],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "sql",
+      "termino": "SQL (Structured Query Language)",
+      "definicion": "Lenguaje estandar para consultar datos estructurados almacenados en bases relacionales.",
+      "aliases": ["structured query language"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "almacenamiento-de-objetos",
+      "termino": "Almacenamiento de objetos",
+      "definicion": "Modelo de almacenamiento en el que cada archivo se guarda completo como un objeto con su identificador, en lugar de en filas y columnas. Es lo que permite mezclar imagenes, JSON y CSV en un mismo lugar sin imponer esquema.",
+      "aliases": ["object storage"],
+      "dominios": [1]
+    },
+    {
+      "id": "etl",
+      "termino": "ETL (Extract, Transform, Load)",
+      "definicion": "Proceso que extrae datos de varios origenes, los transforma y los carga en un repositorio centralizado. Debe ser repetible, porque los modelos se reentrenan con datos nuevos con frecuencia.",
+      "aliases": ["extract transform load"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "aprendizaje-supervisado",
+      "termino": "Aprendizaje supervisado",
+      "definicion": "Estilo de ML en el que se entrena el modelo con datos previamente etiquetados, de modo que los datos especifican tanto la entrada como la salida deseada. Su mayor reto es el costo de etiquetar.",
+      "aliases": ["supervised learning"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "aprendizaje-no-supervisado",
+      "termino": "Aprendizaje no supervisado",
+      "definicion": "Estilo de ML que entrena con datos que tienen features pero no etiquetas. Detecta patrones, agrupa los datos en clusters y los divide en un numero de grupos. Su configuracion es sencilla porque no requiere etiquetado.",
+      "aliases": ["unsupervised learning"],
+      "dominios": [1]
+    },
+    {
+      "id": "aprendizaje-por-refuerzo",
+      "termino": "Aprendizaje por refuerzo",
+      "definicion": "Metodo de ML centrado en la toma autonoma de decisiones por parte de un agente que ejecuta acciones dentro de un entorno para lograr objetivos. Aprende por ensayo y error y no requiere datos etiquetados: las acciones que lo acercan al objetivo se recompensan.",
+      "aliases": ["reinforcement learning", "RL"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "agente-rl",
+      "termino": "Agente (en aprendizaje por refuerzo)",
+      "definicion": "La entidad que toma decisiones y ejecuta acciones dentro del entorno. En AWS DeepRacer, el agente es el auto.",
+      "aliases": ["agent"],
+      "dominios": [1]
+    },
+    {
+      "id": "entorno-rl",
+      "termino": "Entorno (environment)",
+      "definicion": "El espacio en el que el agente actua y del que recibe consecuencias. En AWS DeepRacer, el entorno es la pista.",
+      "aliases": ["environment"],
+      "dominios": [1]
+    },
+    {
+      "id": "recompensa",
+      "termino": "Recompensa (reward)",
+      "definicion": "Senal positiva que recibe el agente cuando una accion lo acerca al objetivo. Para fomentar el aprendizaje, el agente debe poder explorar a veces acciones que no dan recompensa.",
+      "aliases": ["reward"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "clustering",
+      "termino": "Clustering (analisis de clusters)",
+      "definicion": "Tecnicas que clasifican objetos de datos en grupos donde los miembros son lo mas parecidos posible entre si y lo mas distintos posible de los de otros grupos. Requiere definir las features de similitud, una funcion de distancia y el numero de clusters.",
+      "aliases": ["cluster analysis", "agrupamiento"],
+      "dominios": [1]
+    },
+    {
+      "id": "clasificacion",
+      "termino": "Clasificacion",
+      "definicion": "Problema de ML supervisado en el que los valores objetivo son categoricos, es decir, uno o mas valores discretos.",
+      "aliases": ["classification"],
+      "dominios": [1]
+    },
+    {
+      "id": "clasificacion-binaria",
+      "termino": "Clasificacion binaria",
+      "definicion": "Clasificacion que asigna una entrada a una de dos clases predefinidas y mutuamente excluyentes. Por ejemplo, diagnosticar si una persona tiene o no una enfermedad.",
+      "aliases": ["binary classification"],
+      "dominios": [1]
+    },
+    {
+      "id": "clasificacion-multiclase",
+      "termino": "Clasificacion multiclase",
+      "definicion": "Clasificacion que asigna una entrada a una de varias clases. Por ejemplo, predecir si un documento trata de religion, politica o finanzas.",
+      "aliases": ["multiclass classification"],
+      "dominios": [1]
+    },
+    {
+      "id": "regresion",
+      "termino": "Regresion (problema de)",
+      "definicion": "Problema de ML supervisado en el que los valores objetivo son matematicamente continuos, como un precio o una altura.",
+      "aliases": ["regression problem"],
+      "dominios": [1]
+    },
+    {
+      "id": "etiquetado",
+      "termino": "Etiquetado (labeling)",
+      "definicion": "Proceso de asignar a cada registro de entrenamiento la salida correcta esperada. Es una de las partes mas largas del proceso porque los datos etiquetados casi nunca existen de antemano.",
+      "aliases": ["labeling", "etiquetas", "labeled data"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "overfitting",
+      "termino": "Overfitting (sobreajuste)",
+      "definicion": "Error que ocurre cuando el modelo rinde mejor con los datos de entrenamiento que con datos nuevos: se ajusto demasiado bien al entrenamiento y no generaliza. Se corrige normalmente entrenando con datos mas diversos.",
+      "aliases": ["sobreajuste"],
+      "dominios": [1, 2, 4]
+    },
+    {
+      "id": "underfitting",
+      "termino": "Underfitting (subajuste)",
+      "definicion": "Error que ocurre cuando el modelo no logra determinar una relacion significativa entre entrada y salida, y da resultados inexactos tanto con los datos de entrenamiento como con datos nuevos. Suele deberse a entrenar poco tiempo o con un dataset insuficiente.",
+      "aliases": ["subajuste"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "noise",
+      "termino": "Noise (ruido)",
+      "definicion": "Features sin importancia real que el modelo empieza a sobreponderar si se entrena demasiado tiempo. Es otra forma de overfitting.",
+      "aliases": ["ruido"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "sesgo",
+      "termino": "Sesgo (bias)",
+      "definicion": "Disparidad en el rendimiento de un modelo entre distintos grupos, que hace que los resultados se inclinen a favor o en contra de una clase determinada.",
+      "aliases": ["bias"],
+      "dominios": [1, 4, 5]
+    },
+    {
+      "id": "desbalance-de-clases",
+      "termino": "Desbalance de clases (class imbalance)",
+      "definicion": "Situacion en la que un valor de una feature tiene muchas menos muestras de entrenamiento que otro. Es una de las causas principales de sesgo en el modelo.",
+      "aliases": ["class imbalance", "dataset desbalanceado", "imbalanced dataset"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "equidad",
+      "termino": "Equidad (fairness)",
+      "definicion": "Dimension de la IA responsable que busca que los modelos traten a todos de forma equitativa e imparcial, sin importar edad, lugar de residencia, genero o etnia.",
+      "aliases": ["fairness"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "restricciones-de-equidad",
+      "termino": "Restricciones de equidad (fairness constraints)",
+      "definicion": "Limites como la no discriminacion por edad o sexo, que deben identificarse al comienzo del proyecto, antes de crear el modelo.",
+      "aliases": ["fairness constraints"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "model-artifacts",
+      "termino": "Model artifacts",
+      "definicion": "Resultado del entrenamiento: los parametros entrenados, una definicion del modelo que describe como calcular inferencias y otros metadatos. Se guardan normalmente en Amazon S3.",
+      "aliases": ["artefactos del modelo"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "inference-code",
+      "termino": "Inference code",
+      "definicion": "El software que implementa el modelo leyendo sus model artifacts. Empaquetado junto con los artifacts, produce un modelo desplegable.",
+      "aliases": ["codigo de inferencia"],
+      "dominios": [1]
+    },
+    {
+      "id": "endpoint",
+      "termino": "Endpoint",
+      "definicion": "Punto de acceso persistente que recibe peticiones de inferencia y devuelve respuestas. Existe mientras haya recursos de computo en ejecucion.",
+      "aliases": ["endpoints"],
+      "dominios": [1, 2, 3, 5]
+    },
+    {
+      "id": "inferencia-tiempo-real",
+      "termino": "Real-time inference",
+      "definicion": "Opcion de despliegue en la que el modelo vive en un endpoint persistente y responde de inmediato. Ideal cuando se requiere baja latencia y alto throughput sostenido.",
+      "aliases": ["inferencia en tiempo real"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "inferencia-batch",
+      "termino": "Batch transform (inferencia por lotes)",
+      "definicion": "Opcion de despliegue para procesamiento offline, cuando hay gran cantidad de datos disponibles de antemano, no se necesita endpoint persistente y se puede esperar el resultado. Los recursos solo se ejecutan durante el lote y luego se apagan, asi que resulta mas economico.",
+      "aliases": ["batch inference", "batch transform"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "inferencia-asincrona",
+      "termino": "Asynchronous inference",
+      "definicion": "Opcion de inferencia de SageMaker ideal para encolar peticiones con payloads grandes y tiempos de procesamiento largos. SageMaker escala el endpoint hasta cero para no cobrar en periodos sin peticiones.",
+      "aliases": ["inferencia asincrona"],
+      "dominios": [1]
+    },
+    {
+      "id": "inferencia-serverless",
+      "termino": "Serverless inference",
+      "definicion": "Opcion de inferencia de SageMaker que atiende peticiones en tiempo real sin provisionar instancias ni configurar politicas de escalado. Se ejecuta sobre AWS Lambda, asi que solo se paga cuando las funciones corren.",
+      "aliases": ["inferencia serverless"],
+      "dominios": [1]
+    },
+    {
+      "id": "docker-container",
+      "termino": "Contenedor Docker",
+      "definicion": "Paquete que incluye el codigo y sus dependencias y puede ejecutarse en cualquier recurso de computo con un runtime de contenedores instalado. El inference code y los model artifacts se despliegan tipicamente asi.",
+      "aliases": ["docker", "contenedor", "container"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "api-rest",
+      "termino": "API REST",
+      "definicion": "Conjunto de acciones expuestas sobre una conexion HTTP. Por ejemplo, una aplicacion web envia una peticion POST con los datos de entrada al endpoint y recibe la salida del modelo en la respuesta.",
+      "aliases": ["REST API", "API"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "latencia",
+      "termino": "Latencia",
+      "definicion": "Tiempo que transcurre entre enviar una peticion y recibir la respuesta. Es una restriccion critica en aplicaciones que necesitan decisiones instantaneas.",
+      "aliases": ["latency"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "throughput",
+      "termino": "Throughput",
+      "definicion": "Cantidad de peticiones que un sistema puede atender por unidad de tiempo.",
+      "aliases": [],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "ml-pipeline",
+      "termino": "ML pipeline",
+      "definicion": "Serie de pasos interconectados que empieza con un objetivo de negocio y termina operando un modelo desplegado. Muchos prefieren llamarlo ciclo de vida porque sus partes se repiten incluso despues del despliegue.",
+      "aliases": ["pipeline de ML"],
+      "dominios": [1]
+    },
+    {
+      "id": "transfer-learning",
+      "termino": "Transfer learning",
+      "definicion": "Proceso de ajustar y entrenar un modelo ya preentrenado sobre un dataset nuevo, en lugar de entrenar desde cero. Produce modelos precisos con datasets mas pequenos y menos tiempo de entrenamiento.",
+      "aliases": ["aprendizaje por transferencia"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "foundation-model",
+      "termino": "Foundation model (FM)",
+      "definicion": "Modelo preentrenado sobre datasets enormes y sin etiquetar, listo para usar, que sirve como punto de partida para desarrollar aplicaciones mas rapido y a menor costo. Son redes neuronales profundas muy grandes.",
+      "aliases": ["FM", "FMs", "modelo fundacional"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "fine-tuning",
+      "termino": "Fine-tuning",
+      "definicion": "Proceso que extiende el entrenamiento de un modelo para mejorar sus completions en una tarea concreta. Es aprendizaje supervisado: usa un dataset de ejemplos etiquetados para actualizar los pesos del modelo.",
+      "aliases": ["ajuste fino"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "rag",
+      "termino": "RAG (Retrieval Augmented Generation)",
+      "definicion": "Tecnica en la que un modelo generativo consulta una fuente de datos externa a su entrenamiento y usa lo recuperado para construir la respuesta. Ocurre en el momento de la inferencia, sin modificar los pesos del modelo.",
+      "aliases": ["retrieval augmented generation"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "pii",
+      "termino": "PII (Personally Identifiable Information)",
+      "definicion": "Informacion que identifica a una persona: nombre, direccion, correo, telefono o numero de tarjeta. Debe enmascararse o eliminarse de los datos de entrenamiento.",
+      "aliases": ["informacion personal identificable"],
+      "dominios": [1, 4, 5]
+    },
+    {
+      "id": "confidence-score",
+      "termino": "Confidence score",
+      "definicion": "Numero que acompana a cada prediccion e indica cuan seguro esta el modelo. Existe porque las inferencias son probabilisticas, nunca certezas.",
+      "aliases": ["puntaje de confianza"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "amazon-s3",
+      "termino": "Amazon S3 (Simple Storage Service)",
+      "definicion": "Servicio de almacenamiento de objetos. Es la fuente principal de datos de entrenamiento porque admite cualquier tipo de dato, tiene costo bajo y capacidad practicamente ilimitada.",
+      "aliases": ["S3", "Simple Storage Service"],
+      "dominios": [1, 2, 5]
+    },
+    {
+      "id": "amazon-rds",
+      "termino": "Amazon RDS (Relational Database Service)",
+      "definicion": "Servicio de bases de datos relacionales administradas. Almacena datos estructurados que se consultan con SQL y luego se exportan a S3 para entrenar.",
+      "aliases": ["RDS", "Relational Database Service"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "amazon-redshift",
+      "termino": "Amazon Redshift",
+      "definicion": "Data warehouse de AWS. Es otro origen tipico de datos estructurados para entrenamiento.",
+      "aliases": ["Redshift"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "amazon-dynamodb",
+      "termino": "Amazon DynamoDB",
+      "definicion": "Base de datos transaccional NoSQL construida especificamente para datos semiestructurados.",
+      "aliases": ["DynamoDB"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "amazon-documentdb",
+      "termino": "Amazon DocumentDB",
+      "definicion": "Base de datos transaccional con compatibilidad con MongoDB, construida para datos semiestructurados. Tambien puede almacenar embeddings para casos de uso de vectores.",
+      "aliases": ["DocumentDB"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "amazon-msk",
+      "termino": "Amazon MSK (Managed Streaming for Apache Kafka)",
+      "definicion": "Servicio administrado de streaming de datos. AWS Glue puede extraer datos desde el.",
+      "aliases": ["MSK", "Managed Streaming for Apache Kafka"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-kinesis",
+      "termino": "Amazon Kinesis",
+      "definicion": "Servicio de AWS para ingerir y procesar datos en streaming. Es uno de los origenes desde los que AWS Glue puede extraer datos.",
+      "aliases": ["Kinesis"],
+      "dominios": [1]
+    },
+    {
+      "id": "aws-glue",
+      "termino": "AWS Glue",
+      "definicion": "Servicio de ETL totalmente administrado. Descubre los datos, guarda sus metadatos en el Data Catalog y genera el codigo que ejecuta las transformaciones y la carga, tipicamente hacia un bucket de S3.",
+      "aliases": ["Glue"],
+      "dominios": [1, 3, 5]
+    },
+    {
+      "id": "aws-glue-data-catalog",
+      "termino": "AWS Glue Data Catalog",
+      "definicion": "Catalogo que guarda referencias a los datos usados como origen y destino de los jobs de ETL, con su ubicacion, esquema y metricas. Guarda solo metadatos, nunca los datos mismos.",
+      "aliases": ["Glue Data Catalog", "Data Catalog"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "glue-crawler",
+      "termino": "Crawler de AWS Glue",
+      "definicion": "Job que recorre los origenes de datos, determina automaticamente el esquema mediante classifiers y escribe ese esquema en las tablas del Data Catalog.",
+      "aliases": ["crawler"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "aws-glue-databrew",
+      "termino": "AWS Glue DataBrew",
+      "definicion": "Herramienta visual de preparacion de datos que permite limpiar y normalizar sin escribir codigo. Ofrece mas de 250 transformaciones integradas y guarda los pasos en una receta reutilizable.",
+      "aliases": ["DataBrew", "Glue DataBrew"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-sagemaker",
+      "termino": "Amazon SageMaker",
+      "definicion": "Familia de servicios de AWS para preparar, construir, entrenar y desplegar modelos de ML personalizados. Se usa cuando se necesita ir mas alla de lo que ofrecen los servicios de IA preconstruidos.",
+      "aliases": ["SageMaker"],
+      "dominios": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "sagemaker-ground-truth",
+      "termino": "Amazon SageMaker Ground Truth",
+      "definicion": "Servicio de etiquetado de datos. Su active learning usa un modelo de ML para etiquetar automaticamente lo que puede y envia el resto a una fuerza de trabajo humana.",
+      "aliases": ["Ground Truth", "SageMaker Ground Truth"],
+      "dominios": [1, 3, 4]
+    },
+    {
+      "id": "amazon-mechanical-turk",
+      "termino": "Amazon Mechanical Turk",
+      "definicion": "Servicio de crowdsourcing que da acceso a una fuerza de trabajo de mas de 500.000 contratistas independientes repartidos por el mundo, util para etiquetar datos a bajo costo.",
+      "aliases": ["Mechanical Turk"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "sagemaker-canvas",
+      "termino": "Amazon SageMaker Canvas",
+      "definicion": "Interfaz visual para preparar, featurizar y analizar datos, y crear flujos de preprocesamiento con poco o ningun codigo. Incluye mas de 300 transformaciones integradas.",
+      "aliases": ["SageMaker Canvas", "Canvas"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "sagemaker-data-wrangler",
+      "termino": "SageMaker Data Wrangler",
+      "definicion": "Herramienta de seleccion de datos que permite elegir datos crudos de distintos origenes e importarlos con un solo clic.",
+      "aliases": ["Data Wrangler"],
+      "dominios": [1]
+    },
+    {
+      "id": "sagemaker-feature-store",
+      "termino": "Amazon SageMaker Feature Store",
+      "definicion": "Almacen centralizado de features y sus metadatos, para que se puedan descubrir y reutilizar. Reduce el trabajo repetitivo de convertir datos crudos en features.",
+      "aliases": ["Feature Store", "SageMaker Feature Store"],
+      "dominios": [1, 3, 5]
+    },
+    {
+      "id": "sagemaker-experiments",
+      "termino": "Amazon SageMaker Experiments",
+      "definicion": "Capacidad de SageMaker para crear, gestionar, analizar y comparar experimentos de ML. Un experimento es un grupo de ejecuciones de entrenamiento con distintas entradas, parametros y configuraciones.",
+      "aliases": ["SageMaker Experiments"],
+      "dominios": [1]
+    },
+    {
+      "id": "sagemaker-amt",
+      "termino": "SageMaker Automatic Model Tuning (AMT)",
+      "definicion": "Tambien llamado hyperparameter tuning. Encuentra la mejor version de un modelo ejecutando muchos training jobs con los rangos de hiperparametros que se le indican, y elige los valores que maximizan la metrica elegida.",
+      "aliases": ["AMT", "automatic model tuning", "hyperparameter tuning"],
+      "dominios": [1]
+    },
+    {
+      "id": "sagemaker-model-monitor",
+      "termino": "Amazon SageMaker Model Monitor",
+      "definicion": "Capacidad de SageMaker que monitorea modelos en produccion y detecta errores y desviaciones frente a una baseline, segun reglas integradas o propias. Los resultados se ven en SageMaker Studio y se envian a Amazon CloudWatch.",
+      "aliases": ["Model Monitor", "SageMaker Model Monitor"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "sagemaker-pipelines",
+      "termino": "Amazon SageMaker Pipelines",
+      "definicion": "Servicio para orquestar jobs de SageMaker y crear pipelines de ML reproducibles. Se define con el SDK de Python o con JSON, admite ramas condicionales y se visualiza en SageMaker Studio.",
+      "aliases": ["SageMaker Pipelines"],
+      "dominios": [1]
+    },
+    {
+      "id": "sagemaker-model-registry",
+      "termino": "Amazon SageMaker Model Registry",
+      "definicion": "Repositorio centralizado de modelos entrenados y su historial, organizado en model groups con distintas versiones. Permite guardar metadatos, desplegar desde el registro y mantener el estado del modelo como pendiente, aprobado o rechazado.",
+      "aliases": ["Model Registry", "SageMaker Model Registry"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "sagemaker-jumpstart",
+      "termino": "Amazon SageMaker JumpStart",
+      "definicion": "Hub de modelos que ofrece foundation models y modelos especificos de tarea para computer vision y NLP, preentrenados con datasets publicos grandes, con opcion de hacerles fine-tuning con datos propios.",
+      "aliases": ["JumpStart", "SageMaker JumpStart"],
+      "dominios": [1, 2, 3, 5]
+    },
+    {
+      "id": "sagemaker-studio",
+      "termino": "Amazon SageMaker Studio",
+      "definicion": "Entorno de desarrollo de SageMaker donde se visualizan pipelines, resultados de monitoreo y experimentos.",
+      "aliases": ["SageMaker Studio"],
+      "dominios": [1, 3, 5]
+    },
+    {
+      "id": "sagemaker-inference-recommender",
+      "termino": "SageMaker Inference Recommender",
+      "definicion": "Herramienta dentro de SageMaker que prueba distintas configuraciones de despliegue con tu modelo para que elijas la mejor.",
+      "aliases": ["inference recommender"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-ecr",
+      "termino": "Amazon ECR (Elastic Container Registry)",
+      "definicion": "Registro de imagenes de contenedor de AWS. Al crear un training job se le indica a SageMaker la ruta en ECR de la imagen que contiene el algoritmo.",
+      "aliases": ["ECR", "Elastic Container Registry"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "amazon-ec2",
+      "termino": "Amazon EC2 (Elastic Compute Cloud)",
+      "definicion": "Servicio de maquinas virtuales de AWS. Es una de las opciones para ejecutar contenedores con modelos, pero deja al cliente la responsabilidad del sistema operativo, los parches y el escalado.",
+      "aliases": ["EC2", "Elastic Compute Cloud"],
+      "dominios": [1, 2, 5]
+    },
+    {
+      "id": "aws-lambda",
+      "termino": "AWS Lambda",
+      "definicion": "Servicio de computo serverless que ejecuta codigo sin gestionar servidores. Es la base de la opcion de serverless inference de SageMaker.",
+      "aliases": ["Lambda"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "amazon-api-gateway",
+      "termino": "Amazon API Gateway",
+      "definicion": "Servicio que expone y gestiona APIs. Puede servir de interfaz con los clientes y reenviar las peticiones a una funcion Lambda que ejecuta el modelo.",
+      "aliases": ["API Gateway"],
+      "dominios": [1]
+    },
+    {
+      "id": "aws-batch",
+      "termino": "AWS Batch",
+      "definicion": "Servicio para ejecutar cargas de trabajo por lotes en contenedores.",
+      "aliases": [],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-ecs",
+      "termino": "Amazon ECS (Elastic Container Service)",
+      "definicion": "Servicio de orquestacion de contenedores de AWS.",
+      "aliases": ["ECS", "Elastic Container Service"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-eks",
+      "termino": "Amazon EKS (Elastic Kubernetes Service)",
+      "definicion": "Servicio administrado de Kubernetes en AWS.",
+      "aliases": ["EKS", "Elastic Kubernetes Service"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-cloudwatch",
+      "termino": "Amazon CloudWatch",
+      "definicion": "Servicio de monitoreo de AWS. Recibe los resultados de Model Monitor y permite configurar alarmas que disparen acciones correctivas, como iniciar un reentrenamiento.",
+      "aliases": ["CloudWatch"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "aws-step-functions",
+      "termino": "AWS Step Functions",
+      "definicion": "Servicio para definir flujos de trabajo con una interfaz visual de arrastrar y soltar, que integra servicios de AWS y logica propia de forma serverless.",
+      "aliases": ["Step Functions"],
+      "dominios": [1]
+    },
+    {
+      "id": "apache-airflow",
+      "termino": "Apache Airflow",
+      "definicion": "Herramienta open source para crear, programar y monitorear secuencias de procesos y tareas llamadas workflows, de forma programatica.",
+      "aliases": ["Airflow"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-mwaa",
+      "termino": "Amazon MWAA (Managed Workflows for Apache Airflow)",
+      "definicion": "Servicio que permite usar Apache Airflow y Python para crear workflows sin gestionar la infraestructura de escalabilidad, disponibilidad y seguridad.",
+      "aliases": ["MWAA", "Managed Workflows for Apache Airflow"],
+      "dominios": [1]
+    },
+    {
+      "id": "mlops",
+      "termino": "MLOps",
+      "definicion": "Aplicacion de las buenas practicas de ingenieria de software al desarrollo de modelos de ML: automatizar tareas manuales, probar y evaluar el codigo antes de liberarlo y responder automaticamente a incidentes.",
+      "aliases": [],
+      "dominios": [1]
+    },
+    {
+      "id": "data-drift",
+      "termino": "Data drift",
+      "definicion": "Cambio significativo en la distribucion de los datos respecto a los usados para entrenar. Degrada el rendimiento del modelo.",
+      "aliases": ["deriva de datos"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "concept-drift",
+      "termino": "Concept drift",
+      "definicion": "Cambio en las propiedades de las variables objetivo. Como el data drift, degrada el rendimiento del modelo.",
+      "aliases": ["deriva de concepto"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "matriz-de-confusion",
+      "termino": "Matriz de confusion",
+      "definicion": "Tabla que resume el rendimiento de un modelo de clasificacion evaluado contra datos de prueba, con los valores reales normalmente arriba y los predichos a la izquierda.",
+      "aliases": ["confusion matrix"],
+      "dominios": [1]
+    },
+    {
+      "id": "true-positive",
+      "termino": "True positive (TP)",
+      "definicion": "El modelo ve algo que si es de la clase y predice correctamente que lo es.",
+      "aliases": ["TP", "verdadero positivo"],
+      "dominios": [1]
+    },
+    {
+      "id": "true-negative",
+      "termino": "True negative (TN)",
+      "definicion": "El modelo ve algo que no es de la clase y predice correctamente que no lo es.",
+      "aliases": ["TN", "verdadero negativo"],
+      "dominios": [1]
+    },
+    {
+      "id": "false-positive",
+      "termino": "False positive (FP)",
+      "definicion": "El modelo ve algo que no es de la clase pero predice incorrectamente que si lo es.",
+      "aliases": ["FP", "falso positivo"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "false-negative",
+      "termino": "False negative (FN)",
+      "definicion": "El modelo ve algo que si es de la clase pero predice incorrectamente que no lo es.",
+      "aliases": ["FN", "falso negativo"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "accuracy",
+      "termino": "Accuracy (exactitud)",
+      "definicion": "Porcentaje de predicciones correctas: (TP + TN) dividido por el total de predicciones. Varia entre cero y uno y no es buena metrica cuando el dataset esta desbalanceado.",
+      "aliases": ["exactitud"],
+      "dominios": [1, 2, 3, 4]
+    },
+    {
+      "id": "precision",
+      "termino": "Precision",
+      "definicion": "Mide que tan bien el algoritmo predice verdaderos positivos entre todos los positivos que identifica: TP dividido por (TP + FP). Es la metrica adecuada cuando el objetivo es minimizar falsos positivos.",
+      "aliases": [],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "recall",
+      "termino": "Recall",
+      "definicion": "TP dividido por (TP + FN). Es la metrica adecuada cuando el objetivo es minimizar falsos negativos. Tambien se conoce como sensitivity o true positive rate.",
+      "aliases": ["sensitivity", "true positive rate", "TPR"],
+      "dominios": [1, 3, 4]
+    },
+    {
+      "id": "f1-score",
+      "termino": "F1 score",
+      "definicion": "Metrica que equilibra precision y recall combinandolas en un solo valor. Es el mejor compromiso cuando ambas importan.",
+      "aliases": ["F1"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "false-positive-rate",
+      "termino": "False positive rate",
+      "definicion": "Falsos positivos divididos por la suma de falsos positivos y verdaderos negativos. Mide como maneja el modelo los casos que no pertenecen a la clase.",
+      "aliases": ["FPR", "tasa de falsos positivos"],
+      "dominios": [1]
+    },
+    {
+      "id": "true-negative-rate",
+      "termino": "True negative rate",
+      "definicion": "Verdaderos negativos divididos por la suma de falsos positivos y verdaderos negativos. Tambien se llama specificity y mide con que frecuencia el modelo acierta al predecir un resultado negativo.",
+      "aliases": ["TNR", "specificity", "especificidad"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "threshold",
+      "termino": "Threshold (umbral)",
+      "definicion": "Valor que el modelo usa para decidir entre dos clases posibles, convirtiendo una probabilidad en una decision binaria. Con un umbral de 0,6, el modelo clasifica como positivo cuando tiene al menos un 60% de confianza.",
+      "aliases": ["umbral"],
+      "dominios": [1, 3, 4]
+    },
+    {
+      "id": "roc",
+      "termino": "Curva ROC (receiver operating characteristic)",
+      "definicion": "Grafica del true positive rate frente al false positive rate a medida que aumenta el umbral. Muestra que subir el umbral reduce falsos positivos pero aumenta falsos negativos.",
+      "aliases": ["receiver operating characteristic", "curva ROC"],
+      "dominios": [1]
+    },
+    {
+      "id": "auc",
+      "termino": "AUC (area under the curve)",
+      "definicion": "Area bajo la curva ROC. Da una medida agregada del rendimiento del modelo en todo el rango de umbrales. Varia entre cero y uno: uno es exactitud perfecta y 0,5 indica que la prediccion no es mejor que un clasificador aleatorio.",
+      "aliases": ["area under the curve", "area bajo la curva"],
+      "dominios": [1]
+    },
+    {
+      "id": "mse",
+      "termino": "MSE (mean squared error)",
+      "definicion": "Error cuadratico medio. Se calcula tomando la diferencia entre la prediccion y el valor real, elevandola al cuadrado y promediando todas las diferencias cuadradas. Siempre es positivo y cuanto menor, mejor el modelo.",
+      "aliases": ["mean squared error", "error cuadratico medio"],
+      "dominios": [1]
+    },
+    {
+      "id": "rmse",
+      "termino": "RMSE (root mean squared error)",
+      "definicion": "Raiz cuadrada del MSE. Su ventaja es que las unidades coinciden con la variable dependiente, lo que la hace mas facil de interpretar.",
+      "aliases": ["root mean squared error"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "mae",
+      "termino": "MAE (mean absolute error)",
+      "definicion": "Promedio de los valores absolutos de los errores. A diferencia del MSE y el RMSE, no eleva al cuadrado, asi que no enfatiza el impacto de los valores atipicos.",
+      "aliases": ["mean absolute error", "error absoluto medio"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "metricas-de-negocio",
+      "termino": "Metricas de negocio",
+      "definicion": "Indicadores que cuantifican el valor de un modelo de ML para el negocio: reduccion de costos, aumento porcentual de usuarios o ventas, mejora medible en la satisfaccion del cliente o cualquier otra metrica relevante.",
+      "aliases": ["business metrics"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "roi",
+      "termino": "ROI (return on investment)",
+      "definicion": "Retorno de la inversion. Se calcula comparando el costo real de construir y operar el modelo con el modelo de costo-beneficio inicial.",
+      "aliases": ["return on investment", "retorno de la inversion"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "cost-allocation-tags",
+      "termino": "Cost allocation tags",
+      "definicion": "Etiquetas que se asignan a los recursos de AWS para poder filtrar despues los reportes de costos. Por ejemplo, una etiqueta con el nombre del proyecto de ML aplicada a todos los recursos del pipeline.",
+      "aliases": ["etiquetas de asignacion de costos"],
+      "dominios": [1]
+    },
+    {
+      "id": "aws-cost-explorer",
+      "termino": "AWS Cost Explorer",
+      "definicion": "Herramienta para analizar y filtrar los costos de AWS. Usada con cost allocation tags, permite conocer el gasto real de un proyecto de ML.",
+      "aliases": ["Cost Explorer"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-bedrock",
+      "termino": "Amazon Bedrock",
+      "definicion": "Servicio totalmente administrado para construir aplicaciones de IA generativa sobre foundation models de Amazon, Meta y startups lideres, accesibles por API. Permite personalizar un modelo con datos propios o crear una knowledge base para consultarlo.",
+      "aliases": ["Bedrock"],
+      "dominios": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "amazon-titan",
+      "termino": "Amazon Titan",
+      "definicion": "Familia de foundation models propios de Amazon. Titan actua como modelo de proposito general y es buena opcion cuando se necesita generacion de texto. Titan Image Generator genera imagenes a partir de un prompt.",
+      "aliases": ["Titan"],
+      "dominios": [1, 2, 3]
+    },
+    {
+      "id": "amazon-rekognition",
+      "termino": "Amazon Rekognition",
+      "definicion": "Servicio de computer vision preentrenado que funciona con imagenes y videos, incluido video en streaming. Hace reconocimiento facial, deteccion y etiquetado de objetos, lectura de texto en imagenes y moderacion de contenido explicito o violento.",
+      "aliases": ["Rekognition"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "amazon-textract",
+      "termino": "Amazon Textract",
+      "definicion": "Servicio que extrae texto, escritura a mano, formularios y datos tabulares de documentos escaneados. Va mas alla del OCR clasico porque entiende la estructura del documento.",
+      "aliases": ["Textract"],
+      "dominios": [1, 4]
+    },
+    {
+      "id": "amazon-comprehend",
+      "termino": "Amazon Comprehend",
+      "definicion": "Servicio de NLP que descubre insights y relaciones en texto: sentimiento, entidades, idioma y PII. Viene preentrenado para detectar PII y admite custom classifiers con categorias propias.",
+      "aliases": ["Comprehend"],
+      "dominios": [1, 4, 5]
+    },
+    {
+      "id": "amazon-lex",
+      "termino": "Amazon Lex",
+      "definicion": "Servicio para construir interfaces de voz y texto. Usa la misma tecnologia que Amazon Alexa. Casos tipicos: chatbots de atencion al cliente y sistemas de respuesta de voz interactiva que enrutan llamadas.",
+      "aliases": ["Lex"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-transcribe",
+      "termino": "Amazon Transcribe",
+      "definicion": "Servicio de reconocimiento automatico de voz que admite mas de 100 idiomas. Procesa audio o video en vivo y grabado para producir transcripciones de alta calidad. Caso tipico: subtitular audio en streaming en tiempo real.",
+      "aliases": ["Transcribe"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-polly",
+      "termino": "Amazon Polly",
+      "definicion": "Servicio que convierte texto en voz de sonido natural en decenas de idiomas usando deep learning. Casos tipicos: convertir articulos a audio y dar indicaciones en sistemas de respuesta de voz interactiva.",
+      "aliases": ["Polly"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-kendra",
+      "termino": "Amazon Kendra",
+      "definicion": "Servicio que usa ML para hacer busqueda inteligente en sistemas empresariales. Aplica NLP para entender preguntas en lenguaje natural y responde segun una comprension inteligente de la pregunta.",
+      "aliases": ["Kendra"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-personalize",
+      "termino": "Amazon Personalize",
+      "definicion": "Servicio que genera recomendaciones personalizadas automaticamente para sectores como retail, medios y entretenimiento. Tambien permite segmentar clientes segun sus preferencias para campanas de marketing.",
+      "aliases": ["Personalize"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-translate",
+      "termino": "Amazon Translate",
+      "definicion": "Servicio que traduce texto con fluidez entre 75 idiomas. Esta construido sobre una red neuronal que considera el contexto completo de la frase de origen y de lo ya traducido.",
+      "aliases": ["Translate"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "amazon-fraud-detector",
+      "termino": "Amazon Fraud Detector",
+      "definicion": "Servicio que identifica actividades potencialmente fraudulentas en linea, con modelos preentrenados para fraude en transacciones, resenas de producto, checkout y pagos, cuentas nuevas y robo de cuentas.",
+      "aliases": ["Fraud Detector"],
+      "dominios": [1]
+    },
+    {
+      "id": "aws-deepracer",
+      "termino": "AWS DeepRacer",
+      "definicion": "Auto de carreras a escala que Amazon ofrece para ensenar aprendizaje por refuerzo. El auto es el agente, la pista es el entorno, avanzar es una accion y el objetivo es mantenerse en la pista y terminar el recorrido de la forma mas eficiente posible.",
+      "aliases": ["DeepRacer"],
+      "dominios": [1]
+    },
+    {
+      "id": "amazon-q-developer",
+      "termino": "Amazon Q Developer",
+      "definicion": "Herramienta que genera sugerencias de codigo en tiempo real, desde fragmentos hasta funciones completas, a partir de los comentarios y el codigo existente. Antes se llamaba Amazon CodeWhisperer.",
+      "aliases": ["Q Developer", "CodeWhisperer"],
+      "dominios": [1, 2]
+    },
+    {
+      "id": "eda",
+      "termino": "EDA (Exploratory Data Analysis)",
+      "definicion": "Analisis exploratorio de datos. Con herramientas de visualizacion permite entender rapidamente y en profundidad los datos antes de modelar.",
+      "aliases": ["analisis exploratorio de datos", "exploratory data analysis"],
+      "dominios": [1]
+    },
+    {
+      "id": "feature-engineering",
+      "termino": "Feature engineering",
+      "definicion": "Determinar que caracteristicas del dataset se usaran como features para entrenar, quedandose solo con las que contribuyen a minimizar el error. Reducir el numero de features reduce la memoria y el computo necesarios.",
+      "aliases": ["ingenieria de features"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "split-datos",
+      "termino": "Division del dataset (splits)",
+      "definicion": "Separacion de los datos disponibles en tres conjuntos. La recomendacion habitual es 80% para entrenar, 10% para evaluar el modelo y 10% para la prueba final antes de desplegar a produccion.",
+      "aliases": ["training validation test split", "splits"],
+      "dominios": [1, 3]
+    },
+    {
+      "id": "training-job",
+      "termino": "Training job",
+      "definicion": "Trabajo de entrenamiento en SageMaker. Se le indica la URL del bucket de S3 con los datos, los recursos de computo, el bucket de salida para los artifacts, la ruta en ECR de la imagen con el algoritmo y los hiperparametros.",
+      "aliases": ["trabajo de entrenamiento"],
+      "dominios": [1, 5]
+    },
+    {
+      "id": "experimento-ml",
+      "termino": "Experimento (running experiments)",
+      "definicion": "Buena practica de ejecutar muchos trabajos de entrenamiento en paralelo con distintos algoritmos y configuraciones, para dar con la solucion de mejor rendimiento.",
+      "aliases": ["experiments", "experimentos"],
+      "dominios": [1]
+    }
+  ]
+}

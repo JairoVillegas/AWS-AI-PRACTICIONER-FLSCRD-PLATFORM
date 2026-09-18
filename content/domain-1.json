@@ -1,0 +1,1441 @@
+{
+  "dominio": 1,
+  "dominio_nombre": "Fundamentos de IA y ML",
+  "peso_examen": "20%",
+  "version": "1.0",
+  "estado": "parcial: task statement 1.1 completo; 1.2 y 1.3 pendientes",
+  "cards": [
+    {
+      "id": "D1-T1.1-L1-001",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Definicion de inteligencia artificial",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es la inteligencia artificial y cual es su meta?",
+      "reverso": {
+        "respuesta_corta": "Es el campo de la informatica dedicado a resolver problemas cognitivos que normalmente asociamos a la inteligencia humana, como aprender, crear y reconocer imagenes. Su meta es crear un sistema que aprende por si mismo y deriva significado de los datos.",
+        "explicacion": "La clave de la definicion esta en la palabra cognitivo. Un programa tradicional ejecuta instrucciones que alguien escribio; la IA aborda tareas para las que nadie puede escribir las instrucciones completas, porque ni nosotros sabemos explicar como las hacemos. Nadie puede enumerar las reglas exactas para reconocer una cara. De ahi que la meta sea un sistema que aprende por si mismo: en lugar de recibir las reglas, las extrae de los datos.",
+        "glosario_refs": ["inteligencia-artificial", "machine-learning", "deep-learning"],
+        "puntos_clave": [
+          "Ejemplos que el curso menciona como IA de uso diario: Alexa y ChatGPT",
+          "Puede responder de forma significativa a preguntas y crear contenido original como texto e imagenes",
+          "Como procesa cantidades enormes de datos con rapidez, sirve para problemas complejos como la deteccion de fraude en tiempo real",
+          "Jerarquia: la IA contiene al machine learning, que contiene al deep learning, que contiene a la IA generativa"
+        ],
+        "descartes": [],
+        "tip_examen": "El examen usa la jerarquia como trampa: el deep learning es un tipo de machine learning, no algo paralelo, y la IA generativa es un subconjunto del deep learning."
+      },
+      "servicios_aws": [],
+      "tags": ["fundamentos", "definiciones"],
+      "relacionadas": ["D1-T1.1-L1-002", "D1-T1.1-L1-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-002",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Machine learning frente a IA",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es el machine learning y que relacion tiene con la inteligencia artificial?",
+      "reverso": {
+        "respuesta_corta": "Es una rama de la IA y de la informatica que se enfoca en usar datos y algoritmos para imitar la forma en que aprenden los humanos, mejorando su exactitud de forma gradual.",
+        "explicacion": "El machine learning es el como mas comun de la IA. La IA describe el objetivo (resolver problemas cognitivos) y el ML describe una manera concreta de lograrlo: entrenar modelos con datasets grandes para que identifiquen patrones y hagan predicciones. La palabra gradual importa: el modelo no aprende de golpe, mejora su exactitud a medida que recibe mas datos conocidos.",
+        "glosario_refs": ["machine-learning", "inteligencia-artificial", "modelo", "inferencia"],
+        "puntos_clave": [
+          "Se entrena con datasets grandes para identificar patrones y hacer predicciones",
+          "Ejemplo del curso: la recomendacion de productos a un cliente que compra en linea",
+          "No toda IA es ML, pero en la practica del examen casi todos los ejemplos de IA son ML"
+        ],
+        "descartes": [],
+        "tip_examen": "Si el enunciado menciona aprender de datos historicos para predecir, es machine learning. Si menciona generar contenido nuevo, es IA generativa."
+      },
+      "servicios_aws": [],
+      "tags": ["fundamentos", "definiciones"],
+      "relacionadas": ["D1-T1.1-L1-001", "D1-T1.1-L1-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-003",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Deep learning",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es el deep learning y que tipo de tareas resuelve?",
+      "reverso": {
+        "respuesta_corta": "Es un tipo de modelo de machine learning inspirado en el cerebro humano, que usa capas de redes neuronales para procesar informacion. Reconoce voz humana y objetos en imagenes, entre otras cosas.",
+        "explicacion": "Lo que distingue al deep learning del resto del ML es el uso de redes neuronales organizadas en capas. Esa estructura en capas es lo que le permite manejar relaciones muy complejas entre los datos, como la que existe entre millones de pixeles y el concepto de gato. Un algoritmo mas simple no puede modelar esa complejidad.",
+        "glosario_refs": ["deep-learning", "red-neuronal", "capas-red-neuronal", "machine-learning"],
+        "puntos_clave": [
+          "Ejemplos de tareas: reconocimiento de voz humana y reconocimiento de objetos en imagenes",
+          "Es el unico tipo de ML que usa redes neuronales",
+          "La IA generativa se construye sobre modelos de deep learning"
+        ],
+        "descartes": [],
+        "tip_examen": "Ambos tipos de ML usan algoritmos estadisticos, pero solo el deep learning usa redes neuronales para simular la inteligencia humana."
+      },
+      "servicios_aws": [],
+      "tags": ["fundamentos", "definiciones", "redes neuronales"],
+      "relacionadas": ["D1-T1.1-L5-001", "D1-T1.1-L1-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-004",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Beneficios generales de la IA para el negocio",
+      "tipo": "por_que",
+      "nivel": 1,
+      "frente": "Por que la IA aumenta la eficiencia de un negocio? Enumera los cuatro beneficios que plantea el curso.",
+      "reverso": {
+        "respuesta_corta": "Procesa cantidades enormes de datos con rapidez para resolver problemas complejos; ejecuta tareas repetitivas y monotonas liberando a los empleados para trabajo creativo; encuentra patrones en los datos; y pronostica tendencias.",
+        "explicacion": "El argumento de negocio no es que la IA sea inteligente, sino que hace bien tres cosas que a las personas nos cuestan: volumen, constancia y patrones. Una persona no puede revisar un millon de transacciones por minuto, se cansa en tareas monotonas y no percibe correlaciones en datos de alta dimension. Al encontrar patrones y pronosticar tendencias, permite decisiones mas inteligentes y reaccion mas rapida ante problemas.",
+        "glosario_refs": ["inteligencia-artificial", "analisis-de-regresion"],
+        "puntos_clave": [
+          "A diferencia de los humanos, la IA puede trabajar todo el dia sin que su rendimiento decaiga",
+          "Es especialmente potente encontrando patrones y pronosticando tendencias",
+          "El valor de las tareas repetitivas no es solo el ahorro, es liberar a la gente para trabajo creativo"
+        ],
+        "descartes": [],
+        "tip_examen": "Estos cuatro beneficios reaparecen en el task statement 1.2 como criterio para decidir si conviene usar IA."
+      },
+      "servicios_aws": [],
+      "tags": ["beneficios", "casos de uso"],
+      "relacionadas": ["D1-T1.2-L1-001"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-005",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Inferencia",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Como se llama la prediccion que hace un modelo de IA y que naturaleza tiene ese resultado?",
+      "reverso": {
+        "respuesta_corta": "Se llama inferencia. Es basicamente una conjetura educada, por lo que el modelo devuelve un resultado probabilistico.",
+        "explicacion": "Esta es una de las ideas que mas veces reaparece en el examen. El modelo no afirma esto es un pez, sino que hay tal probabilidad de que sea un pez. Por eso las inferencias no siempre son exactas y por eso los servicios de IA de AWS devuelven un confidence score junto a cada prediccion. Esa naturaleza probabilistica tiene consecuencias practicas: obliga a definir umbrales y hace que el mismo modelo pueda equivocarse con casos que parecen faciles.",
+        "glosario_refs": ["inferencia", "probabilistico", "confidence-score", "deterministico"],
+        "puntos_clave": [
+          "Entrenamiento es ajustar parametros; inferencia es usar el modelo ya entrenado con datos nuevos",
+          "Como el resultado es probabilistico, entradas identicas pueden dar resultados distintos",
+          "Los servicios de AWS devuelven confidence score precisamente por esto"
+        ],
+        "descartes": [
+          {
+            "opcion": "Prediccion deterministica",
+            "por_que_no": "Un resultado deterministico es siempre el mismo para la misma entrada y es propio de un sistema basado en reglas, no de un modelo de ML."
+          }
+        ],
+        "tip_examen": "Si el enunciado exige resultados consistentes e identicos para la misma entrada, la respuesta correcta es un sistema basado en reglas, no un modelo de ML."
+      },
+      "servicios_aws": [],
+      "tags": ["inferencia", "probabilistico"],
+      "relacionadas": ["D1-T1.2-L1-004", "D1-T1.1-L3-001"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-006",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Pronostico con analisis de regresion",
+      "tipo": "caso_de_uso",
+      "nivel": 2,
+      "frente": "Una tienda necesita saber cuantos vendedores tendra que asignar cada dia de la semana que viene. Que tecnica de IA aplica y sobre que tipo de datos?",
+      "reverso": {
+        "respuesta_corta": "Analisis de regresion sobre datos historicos, tambien conocidos como time series data, para predecir valores futuros.",
+        "explicacion": "El analisis de regresion sirve aqui porque lo que se quiere predecir es una cantidad continua, no una categoria. El modelo analiza los patrones del pasado (cuanta gente entro cada dia, en que temporada, con que clima) y proyecta cuantos clientes habra un dia futuro. Funciona porque los datos llevan timestamp y estan ordenados en el tiempo, lo que permite que el modelo capte estacionalidad y tendencia.",
+        "glosario_refs": ["analisis-de-regresion", "time-series", "inferencia", "regresion"],
+        "puntos_clave": [
+          "Los datos historicos con timestamp se llaman time series data",
+          "La salida es un valor continuo, por eso es un problema de regresion y no de clasificacion",
+          "Otro ejemplo del curso: una empresa de taxis posiciona sus autos en los lugares y horarios donde es probable que los clientes los necesiten"
+        ],
+        "descartes": [
+          {
+            "opcion": "Clasificacion",
+            "por_que_no": "La clasificacion asigna la entrada a categorias discretas. Aqui la respuesta es un numero de clientes, una cantidad continua."
+          },
+          {
+            "opcion": "Deteccion de anomalias",
+            "por_que_no": "Sirve para detectar desviaciones del patron esperado, no para pronosticar el patron en si."
+          }
+        ],
+        "tip_examen": "Palabras clave que apuntan a regresion en el examen: forecast, predecir demanda, estimar valor, cuanto."
+      },
+      "servicios_aws": [],
+      "tags": ["regresion", "forecasting", "time series"],
+      "relacionadas": ["D1-T1.2-L2-004", "D1-T1.1-L2-010"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-007",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Deteccion de anomalias",
+      "tipo": "caso_de_uso",
+      "nivel": 2,
+      "frente": "El volumen de llamadas de un centro de atencion varia de forma predecible durante el dia. De pronto la aplicacion del call center se cae y las llamadas se desploman. Como detecta esto la IA y por que puede hacerlo?",
+      "reverso": {
+        "respuesta_corta": "Como deteccion de anomalias: la IA reconoce el patron normal y por eso puede notar cuando hay una desviacion respecto a lo esperado, y notificar al departamento de TI.",
+        "explicacion": "La deteccion de anomalias es el reverso de la deteccion de patrones, y esa es la idea importante. Un modelo no necesita que le expliquen que es una caida del sistema; le basta con haber aprendido como se ve un dia normal. Cualquier cosa suficientemente alejada de ese patron es una anomalia. Por eso el aprendizaje no supervisado se usa comunmente para este fin: no requiere ejemplos etiquetados de fallas.",
+        "glosario_refs": ["deteccion-de-anomalias", "anomalia", "aprendizaje-no-supervisado"],
+        "puntos_clave": [
+          "Funciona porque la IA ya reconoce el patron esperado",
+          "Otro ejemplo del curso: MasterCard detecta transacciones fraudulentas identificando actividad anomala",
+          "Otro ejemplo: un sensor de temperatura en un pozo petrolero puede estar fallando si sus datos quedan muy fuera del rango normal"
+        ],
+        "descartes": [
+          {
+            "opcion": "Clasificacion supervisada",
+            "por_que_no": "Requeriria un dataset etiquetado con ejemplos de fallas, que normalmente no existe justamente porque las fallas son raras."
+          }
+        ],
+        "tip_examen": "Deteccion de anomalias y clustering son los dos casos de uso emblematicos del aprendizaje no supervisado."
+      },
+      "servicios_aws": [],
+      "tags": ["anomalias", "casos de uso"],
+      "relacionadas": ["D1-T1.1-L3-008", "D1-T1.2-L2-008"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-008",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Computer vision",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que hacen las aplicaciones de computer vision y que ejemplos concretos usa el curso?",
+      "reverso": {
+        "respuesta_corta": "Procesan imagenes y video para identificar objetos y reconocer caras, ademas de clasificar, recomendar, monitorear y detectar. Los ejemplos del curso son detectar aranazos en una superficie y detectar que falta un capacitor en una placa de circuito.",
+        "explicacion": "Computer vision es la categoria que agrupa todo lo que consiste en extraer informacion de pixeles. Los dos ejemplos del curso marcan una progresion de dificultad: detectar un aranazo es notar algo que no deberia estar, mientras que detectar un capacitor ausente es notar que algo que deberia estar no esta, lo que exige un modelo del aspecto correcto de la placa.",
+        "glosario_refs": ["computer-vision", "deep-learning", "amazon-rekognition"],
+        "puntos_clave": [
+          "Incluye identificacion de objetos, reconocimiento facial, clasificacion, recomendacion, monitoreo y deteccion",
+          "Koch Industries usa IA con computer vision para monitorear lineas de ensamblaje y mantener la calidad del producto",
+          "Las redes neuronales son hoy el enfoque algoritmico estandar para computer vision"
+        ],
+        "descartes": [],
+        "tip_examen": "En AWS, el servicio preentrenado de computer vision es Amazon Rekognition. Si el enunciado habla de imagenes o video, ahi debe apuntar tu respuesta."
+      },
+      "servicios_aws": ["Amazon Rekognition"],
+      "tags": ["computer vision", "casos de uso"],
+      "relacionadas": ["D1-T1.2-L3-002", "D1-T1.1-L5-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-009",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "Traduccion automatica",
+      "tipo": "por_que",
+      "nivel": 2,
+      "frente": "Por que la traduccion con IA es mejor que traducir palabra por palabra?",
+      "reverso": {
+        "respuesta_corta": "Porque analiza todos los elementos del texto y reconoce como las palabras se influyen entre si, lo que le permite comunicar con exactitud el significado de la frase en el idioma destino.",
+        "explicacion": "Traducir palabra por palabra falla porque el significado no vive en las palabras aisladas sino en su relacion. El orden, la concordancia y las expresiones idiomaticas se pierden. El modelo de IA considera el contexto completo de la frase, y eso es justamente lo que Amazon Translate hace al construirse sobre una red neuronal que toma en cuenta la frase de origen completa y lo que ya ha traducido hasta ese punto.",
+        "glosario_refs": ["traduccion-automatica", "amazon-translate", "red-neuronal"],
+        "puntos_clave": [
+          "Ocurre sin intervencion humana",
+          "Ejemplo del curso: un chat de soporte donde el cliente escribe en espanol y el agente en ingles, con traduccion en tiempo real en ambos sentidos",
+          "Amazon Translate traduce entre 75 idiomas"
+        ],
+        "descartes": [],
+        "tip_examen": "No confundas los 75 idiomas de Amazon Translate con los mas de 100 de Amazon Transcribe. Son numeros distintos y el examen puede usarlos."
+      },
+      "servicios_aws": ["Amazon Translate"],
+      "tags": ["traduccion", "NLP"],
+      "relacionadas": ["D1-T1.2-L4-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-010",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "NLP",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es el procesamiento de lenguaje natural (NLP) y que tecnologias cotidianas impulsa?",
+      "reverso": {
+        "respuesta_corta": "Es lo que permite a las maquinas entender, interpretar y generar lenguaje humano de forma que suene natural. Es la tecnologia detras de los dispositivos Alexa y de los chatbots que permiten reservar un hotel.",
+        "explicacion": "La diferencia entre NLP y una simple busqueda de palabras clave es que el NLP interpreta la intencion. En el ejemplo del curso, el chatbot va pidiendole al cliente la informacion que le falta para completar una reserva, lo cual implica que sabe que datos necesita, cuales ya tiene y como pedirlos en lenguaje natural.",
+        "glosario_refs": ["nlp", "amazon-lex", "amazon-comprehend", "llm"],
+        "puntos_clave": [
+          "Cubre entender, interpretar y generar lenguaje",
+          "Ejemplo del curso: un chatbot que le va pidiendo al cliente los datos que necesita para hacer una reserva",
+          "El deep learning destaca en NLP porque hace falta identificar relaciones complejas entre palabras"
+        ],
+        "descartes": [],
+        "tip_examen": "En AWS, NLP se reparte entre servicios: Amazon Comprehend para analizar texto, Amazon Lex para interfaces conversacionales y Amazon Kendra para busqueda con lenguaje natural."
+      },
+      "servicios_aws": ["Amazon Lex", "Amazon Comprehend"],
+      "tags": ["NLP", "chatbots"],
+      "relacionadas": ["D1-T1.2-L3-004", "D1-T1.1-L5-009"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L1-011",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 1,
+      "tema": "IA generativa como siguiente paso",
+      "tipo": "comparacion",
+      "nivel": 2,
+      "frente": "Que diferencia a la IA generativa de los tipos de IA vistos antes, y como se la usa en la practica?",
+      "reverso": {
+        "respuesta_corta": "Puede mantener conversaciones aparentemente inteligentes y generar contenido original como historias, imagenes, videos y musica, en lugar de solo clasificar o predecir sobre contenido existente. Se usa partiendo de un prompt.",
+        "explicacion": "Toda la IA vista hasta este punto analiza algo que ya existe: clasifica una imagen, detecta una anomalia, pronostica una cifra. La IA generativa produce algo que no existia. El flujo de trabajo tambien cambia: en lugar de alimentar un dataset y leer una prediccion, se escribe un prompt y se recibe una completion. En el ejemplo del curso, un solo prompt pidiendo una cancion a partir de una linea de letra devolvio letra completa con dos versos, coro, puente y cierre.",
+        "glosario_refs": ["ia-generativa", "prompt", "completion", "amazon-bedrock", "deep-learning"],
+        "puntos_clave": [
+          "Genera texto, imagenes, video, audio, musica y codigo",
+          "El punto de partida habitual es un prompt",
+          "Ejemplo del curso: en Amazon Bedrock, un prompt pidiendo una cancion devolvio dos versos, coro, puente y outro",
+          "Se puede experimentar gratis construyendo una app propia en partyrock.aws"
+        ],
+        "descartes": [
+          {
+            "opcion": "Deteccion de patrones",
+            "por_que_no": "Es lo que hace la IA tradicional: encontrar o clasificar contenido existente. La IA generativa crea contenido nuevo."
+          }
+        ],
+        "tip_examen": "En AWS, el servicio para construir aplicaciones de IA generativa es Amazon Bedrock, y PartyRock es su playground de aprendizaje."
+      },
+      "servicios_aws": ["Amazon Bedrock"],
+      "tags": ["IA generativa", "prompt"],
+      "relacionadas": ["D1-T1.1-L5-008", "D1-T1.2-L4-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 1"
+    },
+    {
+      "id": "D1-T1.1-L2-001",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Definicion tecnica de machine learning",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Cual es la definicion tecnica de machine learning que da el curso, y que frase de ella es la mas importante?",
+      "reverso": {
+        "respuesta_corta": "Es la ciencia de desarrollar algoritmos y modelos estadisticos que los sistemas informaticos usan para realizar tareas complejas sin instrucciones explicitas. La frase clave es sin instrucciones explicitas.",
+        "explicacion": "Sin instrucciones explicitas es lo que separa el ML de la programacion tradicional. En un programa normal, el desarrollador escribe las reglas. En ML, el desarrollador escribe el algoritmo que descubre las reglas, y las reglas concretas quedan codificadas en los parametros que el entrenamiento ajusta. Por eso un modelo de ML puede resolver problemas que nadie sabe explicar paso a paso.",
+        "glosario_refs": ["machine-learning", "algoritmo", "parametro", "feature"],
+        "puntos_clave": [
+          "Los sistemas usan algoritmos de ML para procesar grandes cantidades de datos historicos e identificar patrones",
+          "El punto de partida es un algoritmo matematico que toma datos como entrada y genera una salida",
+          "Las reglas no se escriben, se aprenden y quedan en los parametros"
+        ],
+        "descartes": [],
+        "tip_examen": "Esta definicion es la contracara del sistema basado en reglas del task statement 1.2: ahi las reglas son explicitas y el resultado deterministico."
+      },
+      "servicios_aws": [],
+      "tags": ["fundamentos", "definiciones"],
+      "relacionadas": ["D1-T1.2-L1-004", "D1-T1.1-L2-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-002",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Features",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es una feature y como puedes visualizarla segun el curso?",
+      "reverso": {
+        "respuesta_corta": "Es cada caracteristica de entrada que el modelo usa. Puedes pensarla como las columnas de una tabla o como los pixeles de una imagen.",
+        "explicacion": "La feature es la unidad de informacion con la que trabaja el modelo, y la analogia del curso es util porque cubre los dos mundos. Con datos estructurados, cada columna (edad, ingreso, ciudad) es una feature. Con datos no estructurados como una imagen, cada pixel funciona como una feature. Esto explica por que las imagenes producen modelos tan grandes: una foto modesta ya aporta cientos de miles de features.",
+        "glosario_refs": ["feature", "datos-estructurados", "datos-no-estructurados", "feature-engineering"],
+        "puntos_clave": [
+          "En datos estructurados, las columnas sirven como features",
+          "En imagenes, los pixeles cumplen ese papel",
+          "En datos no estructurados, las features se derivan del objeto con tecnicas como la tokenizacion",
+          "Reducir el numero de features reduce la memoria y el computo necesarios para entrenar"
+        ],
+        "descartes": [
+          {
+            "opcion": "Parametro",
+            "por_que_no": "El parametro es un valor interno que el modelo ajusta durante el entrenamiento. La feature es un dato de entrada que viene de fuera."
+          },
+          {
+            "opcion": "Label o etiqueta",
+            "por_que_no": "La etiqueta es la salida esperada que se usa en aprendizaje supervisado, no una entrada."
+          }
+        ],
+        "tip_examen": "Distingue tres cosas que el examen mezcla: feature es la entrada, label es la salida esperada, y parametro es lo que el modelo ajusta internamente."
+      },
+      "servicios_aws": [],
+      "tags": ["features", "fundamentos"],
+      "relacionadas": ["D1-T1.1-L2-003", "D1-T1.3-L2-007"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-003",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Mecanica del entrenamiento",
+      "tipo": "secuencia",
+      "nivel": 2,
+      "frente": "Describe la mecanica del entrenamiento de un modelo de ML, desde el algoritmo hasta poder hacer inferencias.",
+      "reverso": {
+        "respuesta_corta": "Se parte de un algoritmo matematico que toma datos y genera una salida. Se le dan datos conocidos con sus features, su tarea es encontrar la correlacion entre las features de entrada y la salida esperada, y se van ajustando los parametros internos hasta que produce de forma fiable el resultado esperado. Entonces puede hacer inferencias sobre datos nuevos.",
+        "explicacion": "El bucle central es: predecir, medir el error, ajustar parametros, repetir. Lo importante conceptualmente es que el algoritmo no sabe de antemano en que direccion mover los parametros; lo descubre observando como cambio el error en las iteraciones anteriores. Por eso hacen falta muchas iteraciones y por eso el entrenamiento requiere volumen de datos y de computo.",
+        "glosario_refs": ["entrenamiento", "algoritmo", "feature", "parametro", "inferencia", "modelo"],
+        "puntos_clave": [
+          "Se sigue entrenando dando mas datos conocidos para que analice",
+          "La tarea del algoritmo es hallar la correlacion entre features de entrada y salida conocida, si esta disponible",
+          "Los ajustes se hacen cambiando los valores de los parametros internos",
+          "Un modelo entrenado puede producir salidas a partir de datos que no vio en el entrenamiento"
+        ],
+        "descartes": [],
+        "tip_examen": "Ojo con la frase si esta disponible al hablar de la salida esperada: es la puerta al aprendizaje no supervisado, donde esa salida no existe."
+      },
+      "servicios_aws": [],
+      "tags": ["entrenamiento", "fundamentos"],
+      "relacionadas": ["D1-T1.1-L2-010", "D1-T1.3-L3-001"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-004",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Datos estructurados",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que son los datos estructurados, donde se almacenan y como se preparan para entrenar?",
+      "reverso": {
+        "respuesta_corta": "Son datos guardados como filas en una tabla con columnas, donde las columnas pueden servir como features. Viven en archivos de texto como CSV o en bases relacionales como Amazon RDS o Amazon Redshift, se consultan con SQL y se exportan a Amazon S3 para el entrenamiento.",
+        "explicacion": "Son el tipo mas facil de entender y procesar porque la estructura ya viene dada: alguien decidio de antemano que columnas existen y que tipo tiene cada una. Eso significa que las features estan practicamente listas. El paso de exportar a S3 no es un detalle: las bases relacionales sirven para consultar registros, no para alimentar un entrenamiento que lee volumenes enormes de una sola vez.",
+        "glosario_refs": ["datos-estructurados", "sql", "amazon-rds", "amazon-redshift", "amazon-s3", "feature"],
+        "puntos_clave": [
+          "Es el tipo de dato mas facil de entender y procesar",
+          "Las columnas pueden servir directamente como features del modelo",
+          "Ejemplos de almacenamiento: archivos CSV, Amazon RDS y Amazon Redshift",
+          "Se consultan con SQL y se exportan a S3 para entrenar"
+        ],
+        "descartes": [],
+        "tip_examen": "Pase lo que pase, la respuesta al donde entrenar es Amazon S3, sin importar de que tipo de datos se parta."
+      },
+      "servicios_aws": ["Amazon RDS", "Amazon Redshift", "Amazon S3"],
+      "tags": ["tipos de datos", "estructurados"],
+      "relacionadas": ["D1-T1.1-L2-008", "D1-T1.1-L2-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-005",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Datos semiestructurados",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que caracteriza a los datos semiestructurados, cual es su ejemplo tipico y que bases de datos de AWS estan construidas para ellos?",
+      "reverso": {
+        "respuesta_corta": "No siguen del todo las reglas de los datos tabulares: a diferencia de una tabla, sus elementos pueden tener atributos distintos o atributos faltantes. El ejemplo tipico es un archivo de texto con JSON, donde las features son pares clave-valor. Amazon DynamoDB y Amazon DocumentDB con compatibilidad MongoDB estan construidas especificamente para ellos.",
+        "explicacion": "La diferencia con lo estructurado es la rigidez del esquema. En una tabla, si una fila no tiene valor para una columna, queda vacia pero la columna existe. En JSON, un registro puede simplemente no incluir ese campo, y otro puede incluir campos que ningun otro tiene. Eso da flexibilidad para datos que cambian de forma, pero obliga a que el preprocesamiento maneje atributos ausentes antes de entrenar.",
+        "glosario_refs": ["datos-semiestructurados", "json", "amazon-dynamodb", "amazon-documentdb", "amazon-s3"],
+        "puntos_clave": [
+          "Los elementos pueden tener atributos diferentes o faltantes",
+          "En un documento JSON, las features se representan como pares clave-valor",
+          "DynamoDB y DocumentDB son bases transaccionales pensadas para este tipo de dato",
+          "Para entrenar, esos datos tambien se exportan a Amazon S3"
+        ],
+        "descartes": [
+          {
+            "opcion": "Datos no estructurados",
+            "por_que_no": "Los no estructurados no se pueden guardar en formato de tabla en absoluto. El JSON si tiene estructura interna con claves; lo que le falta es un esquema rigido y uniforme."
+          }
+        ],
+        "tip_examen": "La palabra transaccional en el enunciado suele apuntar a DynamoDB o DocumentDB como origen, nunca como repositorio de entrenamiento."
+      },
+      "servicios_aws": ["Amazon DynamoDB", "Amazon DocumentDB", "Amazon S3"],
+      "tags": ["tipos de datos", "semiestructurados", "JSON"],
+      "relacionadas": ["D1-T1.1-L2-004", "D1-T1.1-L2-006"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-006",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Datos no estructurados",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Que son los datos no estructurados y como se obtienen features a partir de ellos?",
+      "reverso": {
+        "respuesta_corta": "Son datos que no se ajustan a ningun modelo de datos concreto y no se pueden guardar en formato de tabla, como imagenes, video, archivos de texto o publicaciones en redes sociales. Se guardan como objetos en un sistema de almacenamiento de objetos como Amazon S3, y las features se derivan de esos objetos mediante tecnicas de procesamiento como la tokenizacion.",
+        "explicacion": "Aqui aparece un paso extra que los datos estructurados no necesitan. En una tabla, la columna ya es la feature. En un texto libre no hay columnas, asi que hay que fabricar las features: la tokenizacion descompone el texto en unidades individuales de palabras o frases que el modelo pueda tratar como entradas. Ese paso adicional es una de las razones por las que el deep learning gana terreno con este tipo de datos: puede extraer las features por si mismo.",
+        "glosario_refs": ["datos-no-estructurados", "almacenamiento-de-objetos", "amazon-s3", "tokenizacion", "feature"],
+        "puntos_clave": [
+          "Ejemplos: imagenes, video, archivos de texto y publicaciones en redes sociales",
+          "Se almacenan tipicamente como objetos en Amazon S3",
+          "La tokenizacion descompone el texto en unidades individuales de palabras o frases",
+          "El deep learning es mas adecuado que el ML tradicional para este tipo de datos"
+        ],
+        "descartes": [],
+        "tip_examen": "Regla practica del curso: ML tradicional para datos estructurados y etiquetados, deep learning para datos no estructurados como imagenes, video y texto."
+      },
+      "servicios_aws": ["Amazon S3"],
+      "tags": ["tipos de datos", "no estructurados", "tokenizacion"],
+      "relacionadas": ["D1-T1.1-L5-005", "D1-T1.1-L2-008"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-007",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Time series data",
+      "tipo": "caso_de_uso",
+      "nivel": 2,
+      "frente": "Que son los time series data y que ejemplo de microservicios usa el curso para ilustrar su utilidad?",
+      "reverso": {
+        "respuesta_corta": "Son datos donde cada registro se etiqueta con un timestamp y se almacena secuencialmente. El ejemplo del curso son las metricas de rendimiento de un microservicio (memoria usada, porcentaje de CPU y transacciones por segundo), con las que un modelo puede escalar la infraestructura de forma proactiva antes de que suba la carga.",
+        "explicacion": "Lo valioso de la marca de tiempo es que convierte una lista de numeros en una historia con orden. Eso permite al modelo aprender no solo cuanto se consume, sino cuando y con que forma, y por tanto anticipar. El ejemplo es elegante porque el valor no esta en saber la carga actual, que cualquier monitor te da, sino en escalar antes de que el pico llegue.",
+        "glosario_refs": ["time-series", "amazon-s3", "amazon-cloudwatch"],
+        "puntos_clave": [
+          "Son importantes para entrenar modelos que deben predecir tendencias futuras",
+          "Cada registro lleva timestamp y se guarda secuencialmente",
+          "Segun la frecuencia de muestreo, capturados durante periodos largos pueden crecer bastante, y se almacenan en Amazon S3 para entrenar"
+        ],
+        "descartes": [],
+        "tip_examen": "Time series es la categoria que el examen asocia con forecasting, escalado predictivo y mantenimiento predictivo."
+      },
+      "servicios_aws": ["Amazon S3"],
+      "tags": ["time series", "forecasting"],
+      "relacionadas": ["D1-T1.1-L1-006", "D1-T1.2-L5-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-008",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Por que Amazon S3 es la fuente de datos de entrenamiento",
+      "tipo": "por_que",
+      "nivel": 2,
+      "frente": "Por que Amazon S3 es la fuente principal de datos de entrenamiento, sin importar de donde provengan los datos?",
+      "reverso": {
+        "respuesta_corta": "Porque puede almacenar cualquier tipo de dato, tiene costo mas bajo y capacidad de almacenamiento practicamente ilimitada.",
+        "explicacion": "Las bases operacionales estan optimizadas para transacciones: leer y escribir registros individuales muy rapido bajo un esquema definido. Entrenar es lo contrario: se lee un volumen enorme de una sola vez, y los datos pueden ser tablas, JSON, imagenes y audio mezclados. Ninguna base transaccional encaja con ese patron, y cada tipo de dato requeriria un almacen distinto. S3 resuelve las tres presiones a la vez porque guarda objetos sin imponer esquema, escala sin limite practico y es barato.",
+        "glosario_refs": ["amazon-s3", "almacenamiento-de-objetos", "etl", "model-artifacts"],
+        "puntos_clave": [
+          "Estructurado desde RDS o Redshift, semiestructurado desde DynamoDB o DocumentDB: todo termina exportado a S3",
+          "No estructurado y time series se almacenan directamente en S3",
+          "Los model artifacts resultantes del entrenamiento tambien se guardan normalmente en S3",
+          "El proceso de recoleccion debe ser repetible porque los modelos se reentrenan con datos nuevos"
+        ],
+        "descartes": [
+          {
+            "opcion": "Entrenar leyendo directamente de Amazon RDS",
+            "por_que_no": "RDS esta pensado para cargas transaccionales con esquema fijo, no admite imagenes ni audio y leer volumenes masivos de golpe no es su patron ni es economico."
+          }
+        ],
+        "tip_examen": "Si la pregunta da varios origenes y pide donde centralizar para entrenar, la respuesta es Amazon S3. Si pide como llevarlos hasta alli, la respuesta es AWS Glue."
+      },
+      "servicios_aws": ["Amazon S3", "AWS Glue"],
+      "tags": ["S3", "almacenamiento", "tipos de datos"],
+      "relacionadas": ["D1-T1.3-L2-004", "D1-T1.1-L2-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-009",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Algoritmo de regresion lineal",
+      "tipo": "arquitectura",
+      "nivel": 3,
+      "frente": "En el ejemplo de regresion lineal del curso que predice altura a partir de peso, identifica: la variable independiente, la dependiente, los parametros del modelo y que se minimiza.",
+      "reverso": {
+        "respuesta_corta": "La ecuacion es h = mw + b. La variable independiente es el peso (w), la dependiente es la altura (h), los parametros del modelo son la pendiente (m) y el intercepto (b), y se minimizan los errores, que son las distancias entre los puntos de datos y la linea.",
+        "explicacion": "Este ejemplo es la version minima de todo el machine learning, y por eso vale entenderlo bien. El algoritmo es la ecuacion de la recta, y define la relacion matematica entre entrada y salida. Los parametros son lo unico que el entrenamiento puede tocar: se ajustan iterativamente hasta hallar el modelo que mejor se ajusta. Y mejor ajuste tiene una definicion precisa: los valores de parametros que minimizan la suma de las distancias entre los datos reales y la linea.",
+        "glosario_refs": ["regresion-lineal", "parametro", "algoritmo", "entrenamiento", "inferencia", "mse"],
+        "puntos_clave": [
+          "La ecuacion simple y = mx + b se convierte en h = mw + b en este caso",
+          "La pendiente y el intercepto se ajustan iterativamente durante el entrenamiento",
+          "Los errores son las distancias entre los puntos de datos y la linea",
+          "Cuando termina el entrenamiento, el modelo infiere la altura de una persona a partir de su peso"
+        ],
+        "descartes": [
+          {
+            "opcion": "La pendiente y el intercepto son hiperparametros",
+            "por_que_no": "Son parametros: los ajusta el algoritmo por si mismo durante el entrenamiento. Los hiperparametros los fija una persona antes de entrenar."
+          }
+        ],
+        "tip_examen": "La regresion lineal tambien es el ejemplo que el curso usa para la interpretabilidad: su mecanismo interno es visible, solo pendiente e intercepto, y por eso es un modelo altamente transparente."
+      },
+      "servicios_aws": [],
+      "tags": ["regresion lineal", "parametros", "entrenamiento"],
+      "relacionadas": ["D1-T1.3-L7-004", "D1-T1.1-L2-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L2-010",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 2,
+      "tema": "Parametro frente a hiperparametro",
+      "tipo": "comparacion",
+      "nivel": 3,
+      "frente": "Cual es la diferencia entre un parametro y un hiperparametro?",
+      "reverso": {
+        "respuesta_corta": "El parametro es un valor interno que el algoritmo ajusta por si mismo durante el entrenamiento. El hiperparametro es un valor externo que el cientifico de datos fija antes de entrenar y que afecta el rendimiento del algoritmo.",
+        "explicacion": "La frontera es quien decide el valor. Los parametros son el aprendizaje del modelo: la pendiente y el intercepto de una regresion, o los pesos de una red neuronal. Los hiperparametros son decisiones de configuracion que el modelo no puede tomar por si mismo, como cuantas capas y cuantos nodos tendra una red neuronal. Y como no se pueden deducir, la unica forma de hallar sus valores optimos es ejecutar multiples experimentos con configuraciones distintas.",
+        "glosario_refs": ["parametro", "hiperparametro", "sagemaker-amt", "experimento-ml", "peso"],
+        "puntos_clave": [
+          "Cada algoritmo tiene un conjunto de hiperparametros que afectan su rendimiento",
+          "Ejemplo de hiperparametro: cuantas capas y cuantos nodos tendra un modelo de deep learning",
+          "Los valores optimos de los hiperparametros solo se determinan ejecutando multiples experimentos",
+          "En AWS, SageMaker Automatic Model Tuning automatiza esa busqueda"
+        ],
+        "descartes": [],
+        "tip_examen": "Si el enunciado dice que el cientifico de datos lo configura antes de entrenar, es hiperparametro. Si dice que se actualiza durante el entrenamiento, es parametro o peso."
+      },
+      "servicios_aws": ["Amazon SageMaker"],
+      "tags": ["parametros", "hiperparametros"],
+      "relacionadas": ["D1-T1.3-L3-003", "D1-T1.1-L2-009"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 2"
+    },
+    {
+      "id": "D1-T1.1-L3-001",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Model artifacts y modelo desplegable",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Que produce el proceso de entrenamiento, de que se compone y que hace falta anadirle para tener un modelo desplegable?",
+      "reverso": {
+        "respuesta_corta": "Produce los model artifacts, que consisten tipicamente en los parametros entrenados, una definicion del modelo que describe como calcular inferencias y otros metadatos. Para tener un modelo desplegable hay que empaquetarlos junto con el inference code, que es el software que implementa el modelo leyendo esos artifacts.",
+        "explicacion": "La distincion importa porque explica por que un modelo no es un programa. Los artifacts son datos, no codigo ejecutable: son los numeros aprendidos mas la descripcion de como usarlos. Hace falta el inference code para convertirlos en algo que responda peticiones. Esa separacion es lo que permite guardar los artifacts en S3 y reutilizarlos en distintos entornos de despliegue.",
+        "glosario_refs": ["model-artifacts", "inference-code", "amazon-s3", "docker-container", "parametro"],
+        "puntos_clave": [
+          "Los model artifacts se almacenan normalmente en Amazon S3",
+          "Artifacts mas inference code igual a modelo desplegable",
+          "El conjunto se despliega tipicamente como un contenedor Docker",
+          "Los contenedores Docker pueden correr en cualquier recurso de computo con un runtime de contenedores instalado"
+        ],
+        "descartes": [],
+        "tip_examen": "Para usar la inferencia de SageMaker basta con senalarle dos cosas: los model artifacts en un bucket de S3 y una imagen de contenedor Docker en Amazon ECR."
+      },
+      "servicios_aws": ["Amazon S3", "Amazon ECR"],
+      "tags": ["model artifacts", "despliegue"],
+      "relacionadas": ["D1-T1.3-L4-003", "D1-T1.1-L3-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-002",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Real-time frente a batch inference",
+      "tipo": "comparacion",
+      "nivel": 3,
+      "frente": "Cuales son las dos opciones generales para alojar un modelo y cual es la diferencia principal entre ellas?",
+      "reverso": {
+        "respuesta_corta": "Un endpoint siempre disponible para aceptar peticiones de inferencia en tiempo real, o un batch job que hace la inferencia por lotes. La diferencia principal es que en batch los recursos de computo solo corren mientras se procesa el lote y despues se apagan, mientras que en tiempo real hay recursos siempre encendidos y disponibles.",
+        "explicacion": "Toda la decision se reduce a si alguien esta esperando la respuesta. Si un usuario espera, hace falta un endpoint persistente que responda ya, y eso implica pagar por computo encendido incluso cuando no llegan peticiones. Si nadie espera, se puede acumular el trabajo y procesarlo de golpe, lo que resulta mas economico precisamente porque el computo se apaga al terminar.",
+        "glosario_refs": ["inferencia-tiempo-real", "inferencia-batch", "endpoint", "latencia", "throughput"],
+        "puntos_clave": [
+          "Tiempo real: ideal para inferencias en linea con requisitos de baja latencia y alto throughput; el modelo vive en un endpoint persistente que atiende un flujo sostenido de peticiones",
+          "Batch: adecuado para procesamiento offline cuando hay muchos datos disponibles de antemano y no se necesita endpoint persistente",
+          "Batch resulta mas economico cuando hacen falta muchas inferencias y se puede esperar el resultado",
+          "Ejemplo del curso: con datos historicos de ventas, pronosticar el inventario del mes siguiente para cada producto del catalogo, procesando todo de una vez en una programacion mensual y generando un reporte"
+        ],
+        "descartes": [],
+        "tip_examen": "Palabras que delatan batch en el examen: overnight, programado, reporte, datos disponibles de antemano, se puede esperar. Palabras que delatan tiempo real: interactivo, inmediato, baja latencia."
+      },
+      "servicios_aws": ["Amazon SageMaker"],
+      "tags": ["inferencia", "despliegue", "costos"],
+      "relacionadas": ["D1-T1.3-L4-001", "D1-T1.3-L4-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-003",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Aprendizaje supervisado",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es el aprendizaje supervisado y como se ilustra con el ejemplo del pez del curso?",
+      "reverso": {
+        "respuesta_corta": "Es entrenar el modelo con datos previamente etiquetados, de modo que los datos de entrenamiento especifican tanto la entrada como la salida deseada. En el ejemplo, se le muestran al modelo fotos de peces etiquetadas como pez y fotos de otros animales como manaties etiquetadas como no pez.",
+        "explicacion": "La palabra supervisado viene de que alguien ya dio la respuesta correcta para cada ejemplo. El modelo no descubre que es un pez: descubre que caracteristicas de los pixeles se correlacionan con la etiqueta pez. En un problema de clasificacion de imagenes el modelo mira los pixeles y reconoce agrupaciones y patrones, y sus parametros internos se ajustan hasta que identifica correctamente como pez las imagenes etiquetadas como tal y como no pez el resto.",
+        "glosario_refs": ["aprendizaje-supervisado", "etiquetado", "clasificacion", "inferencia", "probabilistico"],
+        "puntos_clave": [
+          "Los datos especifican entrada y salida deseada",
+          "El modelo genera en realidad la probabilidad de que una imagen sea de un pez, porque las inferencias no siempre son exactas",
+          "El reto del aprendizaje supervisado es etiquetar los datos",
+          "El modelo podria necesitar entrenarse con muchos miles de fotos antes de hacer predicciones fiables, y eso implica personas mirando imagenes y etiquetandolas"
+        ],
+        "descartes": [],
+        "tip_examen": "Regla del task statement 1.2: si el dataset tiene features de entrada mas valores objetivo etiquetados, es un problema supervisado."
+      },
+      "servicios_aws": ["Amazon SageMaker Ground Truth"],
+      "tags": ["aprendizaje supervisado", "etiquetado"],
+      "relacionadas": ["D1-T1.1-L3-004", "D1-T1.2-L2-001"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-004",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "SageMaker Ground Truth y Mechanical Turk",
+      "tipo": "servicio_aws",
+      "nivel": 2,
+      "frente": "Cual es el mayor reto practico del aprendizaje supervisado y como lo aborda AWS?",
+      "reverso": {
+        "respuesta_corta": "El reto es etiquetar los datos, porque hace falta que personas miren cada ejemplo y le pongan su etiqueta. AWS ofrece Amazon SageMaker Ground Truth, que a su vez puede aprovechar Amazon Mechanical Turk, un servicio de crowdsourcing que da acceso a una gran reserva de mano de obra asequible repartida por el mundo.",
+        "explicacion": "Este es el cuello de botella economico del ML supervisado: el algoritmo es gratis pero las etiquetas no. Un modelo puede necesitar miles de imagenes etiquetadas antes de ser fiable, y cada etiqueta es trabajo humano. Ground Truth ataca el problema por dos vias: distribuye el trabajo a una fuerza laboral grande y barata, y con active learning usa un modelo de ML para etiquetar automaticamente lo que puede, enviando solo el resto a personas.",
+        "glosario_refs": ["sagemaker-ground-truth", "amazon-mechanical-turk", "etiquetado", "aprendizaje-supervisado"],
+        "puntos_clave": [
+          "Ground Truth ayuda a construir datasets de entrenamiento etiquetados de alta calidad",
+          "Su active learning etiqueta automaticamente lo que puede y envia el resto a una fuerza de trabajo humana",
+          "Mechanical Turk cuenta con mas de 500.000 contratistas independientes",
+          "Alternativa a Mechanical Turk: una fuerza de trabajo privada interna con tus propios empleados o contratistas"
+        ],
+        "descartes": [
+          {
+            "opcion": "Amazon SageMaker Clarify",
+            "por_que_no": "Detecta sesgo y aporta explicabilidad. No etiqueta datos."
+          },
+          {
+            "opcion": "AWS Glue DataBrew",
+            "por_que_no": "Prepara y limpia datos sin codigo (nulos, valores faltantes, esquemas). No asigna etiquetas de salida."
+          }
+        ],
+        "tip_examen": "Ground Truth reaparece en el Dominio 4: tambien se usa para recolectar preferencias humanas en RLHF, donde los trabajadores ordenan varias respuestas del modelo."
+      },
+      "servicios_aws": ["Amazon SageMaker Ground Truth", "Amazon Mechanical Turk"],
+      "tags": ["etiquetado", "Ground Truth", "crowdsourcing"],
+      "relacionadas": ["D1-T1.3-L2-006", "D1-T1.2-L5-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-005",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Aprendizaje no supervisado",
+      "tipo": "definicion",
+      "nivel": 1,
+      "frente": "Que es el aprendizaje no supervisado, para que casos de uso sirve y por que su configuracion es sencilla?",
+      "reverso": {
+        "respuesta_corta": "Entrena con datos que tienen features pero no estan etiquetados. Detecta patrones, agrupa los datos en clusters y los divide en cierto numero de grupos. Sirve para reconocimiento de patrones, deteccion de anomalias y agrupamiento automatico en categorias. Su configuracion es sencilla precisamente porque los datos de entrenamiento no requieren etiquetado.",
+        "explicacion": "La ausencia de etiquetas cambia la pregunta que se le hace al modelo. En supervisado se pregunta a que clase pertenece esto, y para eso alguien tuvo que definir las clases. En no supervisado se pregunta que estructura hay aqui, y el modelo propone los grupos. Eso elimina el cuello de botella del etiquetado y lo hace util cuando ni siquiera sabes que categorias existen. Como bonus, estos algoritmos tambien sirven para limpiar y procesar datos automaticamente antes de otro modelado.",
+        "glosario_refs": ["aprendizaje-no-supervisado", "clustering", "deteccion-de-anomalias", "feature"],
+        "puntos_clave": [
+          "Casos de uso: reconocimiento de patrones, deteccion de anomalias y agrupacion automatica en categorias",
+          "Tambien se usan para limpiar y procesar datos automaticamente para modelado posterior",
+          "Ejemplo de clustering del curso: identificar distintos tipos de trafico de red para predecir posibles incidentes de seguridad",
+          "Ejemplo de anomalias: un modelo examina datos de sensores y detecta que un sensor de temperatura de un pozo petrolero podria estar fallando porque sus datos quedan muy fuera del rango normal"
+        ],
+        "descartes": [],
+        "tip_examen": "Se usa comunmente para deteccion de anomalias justamente porque puede detectar lo anormal sin que nadie le haya mostrado ejemplos etiquetados de anomalias."
+      },
+      "servicios_aws": [],
+      "tags": ["aprendizaje no supervisado", "clustering", "anomalias"],
+      "relacionadas": ["D1-T1.2-L2-007", "D1-T1.1-L3-007"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-006",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Aprendizaje por refuerzo",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Que es el aprendizaje por refuerzo y por que al agente se le debe permitir a veces tomar acciones que no dan recompensa?",
+      "reverso": {
+        "respuesta_corta": "Es un metodo centrado en la toma autonoma de decisiones por parte de un agente, que ejecuta acciones dentro de un entorno para lograr objetivos concretos. Aprende por ensayo y error y no requiere entrada etiquetada; las acciones que lo acercan al objetivo se recompensan. Se le debe permitir explorar acciones sin recompensa para fomentar el aprendizaje durante el entrenamiento.",
+        "explicacion": "La necesidad de explorar es el punto fino de este tema. Si el agente solo repitiera lo que ya sabe que da recompensa, se quedaria atrapado en la primera estrategia decente que encuentre y nunca descubriria una mejor. Permitirle probar acciones aparentemente malas es lo que le abre la posibilidad de hallar caminos superiores. Es el clasico equilibrio entre explotar lo conocido y explorar lo desconocido.",
+        "glosario_refs": ["aprendizaje-por-refuerzo", "agente-rl", "entorno-rl", "recompensa", "aws-deepracer"],
+        "puntos_clave": [
+          "El modelo aprende por ensayo y error y el entrenamiento no requiere entrada etiquetada",
+          "El agente actua dentro de un entorno persiguiendo objetivos especificos",
+          "Las acciones que acercan al objetivo se recompensan",
+          "Sin exploracion, el agente no puede mejorar mas alla de lo que ya conoce"
+        ],
+        "descartes": [],
+        "tip_examen": "En el Dominio 4 este concepto reaparece como RLHF: la misma mecanica de recompensa, pero con la preferencia humana incorporada en la funcion de recompensa."
+      },
+      "servicios_aws": ["AWS DeepRacer"],
+      "tags": ["aprendizaje por refuerzo", "agente"],
+      "relacionadas": ["D1-T1.1-L3-007", "D1-T1.1-L3-009"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-007",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "AWS DeepRacer",
+      "tipo": "caso_de_uso",
+      "nivel": 2,
+      "frente": "En AWS DeepRacer, identifica el agente, el entorno, una accion y el objetivo.",
+      "reverso": {
+        "respuesta_corta": "El agente es el auto, el entorno es la pista, una accion es que el auto avance por la pista, y el objetivo es mantenerse en la pista y terminar el recorrido de la forma mas eficiente posible.",
+        "explicacion": "DeepRacer existe como herramienta didactica: es un auto de carreras a escala que Amazon ofrece para ensenar a los desarrolladores a construir modelos de aprendizaje por refuerzo. Su valor pedagogico es que hace tangible cada pieza del vocabulario. En el examen suele aparecer justamente asi, pidiendo mapear los cuatro elementos del aprendizaje por refuerzo sobre este ejemplo.",
+        "glosario_refs": ["aws-deepracer", "aprendizaje-por-refuerzo", "agente-rl", "entorno-rl", "recompensa"],
+        "puntos_clave": [
+          "Es un auto de carreras modelo que se puede ensenar a conducir en una pista",
+          "Sirve para ensenar a desarrolladores a construir modelos de aprendizaje por refuerzo",
+          "Mapea los cuatro conceptos: agente, entorno, accion y objetivo"
+        ],
+        "descartes": [],
+        "tip_examen": "Si ves DeepRacer en una pregunta, el tema es aprendizaje por refuerzo, sin excepcion."
+      },
+      "servicios_aws": ["AWS DeepRacer"],
+      "tags": ["DeepRacer", "aprendizaje por refuerzo"],
+      "relacionadas": ["D1-T1.1-L3-006"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-008",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "No supervisado frente a refuerzo",
+      "tipo": "comparacion",
+      "nivel": 4,
+      "frente": "Tanto el aprendizaje no supervisado como el de refuerzo funcionan sin datos etiquetados. Cual es entonces la diferencia entre ellos?",
+      "reverso": {
+        "respuesta_corta": "Los algoritmos no supervisados reciben entradas sin salidas especificadas durante el entrenamiento. El aprendizaje por refuerzo, en cambio, tiene un objetivo final predeterminado: aunque su enfoque es exploratorio, esas exploraciones se validan y mejoran continuamente para aumentar la probabilidad de alcanzar ese objetivo.",
+        "explicacion": "Ambos carecen de etiquetas, pero no de la misma manera. En no supervisado no hay nocion de correcto: el modelo describe la estructura que encuentra y no existe una respuesta contra la que compararse. En refuerzo si hay una nocion de mejor, dada por el objetivo y la senal de recompensa. Esa senal no es una etiqueta por ejemplo, pero si es una brujula. Por eso el refuerzo converge hacia algo y el no supervisado simplemente revela.",
+        "glosario_refs": ["aprendizaje-no-supervisado", "aprendizaje-por-refuerzo", "recompensa", "etiquetado"],
+        "puntos_clave": [
+          "No supervisado: entradas sin salidas especificadas, no hay objetivo predefinido",
+          "Refuerzo: objetivo final predeterminado con enfoque exploratorio validado de forma continua",
+          "La recompensa no es una etiqueta por ejemplo, sino una senal sobre si la accion acerca al objetivo"
+        ],
+        "descartes": [
+          {
+            "opcion": "Los dos son lo mismo porque ninguno usa etiquetas",
+            "por_que_no": "Es la trampa exacta de esta pregunta. Ausencia de etiquetas no implica ausencia de objetivo: el refuerzo tiene una meta predeterminada."
+          }
+        ],
+        "tip_examen": "Es un contraste que el examen explota. Fijate en si el enunciado menciona una meta, una recompensa o un agente que decide: eso lo lleva a refuerzo, no a no supervisado."
+      },
+      "servicios_aws": [],
+      "tags": ["comparacion", "estilos de aprendizaje"],
+      "relacionadas": ["D1-T1.1-L3-005", "D1-T1.1-L3-006"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-009",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Eleccion del estilo de aprendizaje",
+      "tipo": "escenario_examen",
+      "nivel": 4,
+      "frente": "Tienes datos de trafico de red sin etiquetar y quieres descubrir que tipos de trafico existen para anticipar incidentes de seguridad. Que estilo de aprendizaje aplicas y por que no los otros dos?",
+      "reverso": {
+        "respuesta_corta": "Aprendizaje no supervisado, concretamente clustering, porque los datos tienen features pero no etiquetas y el objetivo es descubrir agrupaciones.",
+        "explicacion": "La pista decisiva son dos palabras del enunciado: sin etiquetar y descubrir. Sin etiquetas queda descartado el aprendizaje supervisado, que necesita la salida esperada para cada ejemplo. Y descubrir que tipos existen indica que ni siquiera se conocen las categorias de antemano, que es exactamente lo que resuelve el clustering: agrupar de forma que los miembros de un grupo sean lo mas parecidos posible entre si y lo mas distintos posible de los de otros grupos.",
+        "glosario_refs": ["aprendizaje-no-supervisado", "clustering", "aprendizaje-supervisado", "aprendizaje-por-refuerzo", "etiquetado"],
+        "puntos_clave": [
+          "Los tres estilos se distinguen por la salida esperada y el tipo de entrada",
+          "El curso usa este mismo ejemplo de trafico de red como caso de clustering",
+          "El clustering exige definir las features de similitud, una funcion de distancia y el numero de grupos"
+        ],
+        "descartes": [
+          {
+            "opcion": "Aprendizaje supervisado",
+            "por_que_no": "Requiere datos previamente etiquetados con la salida deseada, y aqui no existen. Habria que invertir en etiquetar, y ademas no se sabe que categorias etiquetar."
+          },
+          {
+            "opcion": "Aprendizaje por refuerzo",
+            "por_que_no": "Esta pensado para que un agente tome decisiones secuenciales dentro de un entorno persiguiendo una meta. Aqui no hay agente ni acciones, solo datos que hay que organizar."
+          }
+        ],
+        "tip_examen": "Esquema de decision: hay etiquetas, es supervisado. No hay etiquetas y se busca estructura, es no supervisado. Hay un agente que actua y una meta, es refuerzo."
+      },
+      "servicios_aws": [],
+      "tags": ["estilos de aprendizaje", "clustering", "decision"],
+      "relacionadas": ["D1-T1.2-L2-001", "D1-T1.1-L3-008"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-010",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Costos de real-time frente a batch",
+      "tipo": "por_que",
+      "nivel": 3,
+      "frente": "Por que la inferencia por lotes puede ser mas economica que la inferencia en tiempo real?",
+      "reverso": {
+        "respuesta_corta": "Porque en batch los recursos de computo solo corren mientras se procesa el lote y despues se apagan, mientras que en tiempo real algunos recursos estan siempre encendidos y disponibles para atender peticiones.",
+        "explicacion": "En la nube se paga por tiempo de computo encendido, no por trabajo util. Un endpoint en tiempo real debe estar listo en todo momento por si llega una peticion, asi que se paga tambien por las horas en que nadie lo usa. Un batch job concentra todo el trabajo en una ventana, paga solo esa ventana y apaga. La contrapartida es la espera: solo funciona cuando nadie necesita la respuesta al instante.",
+        "glosario_refs": ["inferencia-batch", "inferencia-tiempo-real", "endpoint", "inferencia-serverless"],
+        "puntos_clave": [
+          "Batch conviene cuando hacen falta muchas inferencias y se puede esperar el resultado",
+          "Ejemplo del curso: el proceso batch corre de noche sobre los datos de ventas del dia anterior, y es el enfoque mas economico porque los recursos solo corren una vez al dia",
+          "Alternativa intermedia: serverless inference, que corre sobre Lambda y solo cobra cuando las funciones se ejecutan, util si el modelo tiene periodos sin peticiones"
+        ],
+        "descartes": [],
+        "tip_examen": "Si el escenario tiene trafico intermitente pero necesita respuesta en tiempo real, la respuesta no es batch sino serverless inference."
+      },
+      "servicios_aws": ["Amazon SageMaker", "AWS Lambda"],
+      "tags": ["costos", "inferencia"],
+      "relacionadas": ["D1-T1.3-L4-004", "D1-T1.1-L3-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L3-011",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 3,
+      "tema": "Salida real de un clasificador",
+      "tipo": "trampa_examen",
+      "nivel": 3,
+      "frente": "Un modelo entrenado para distinguir peces recibe una foto. Que devuelve exactamente?",
+      "reverso": {
+        "respuesta_corta": "No devuelve un si o un no, sino la probabilidad de que la imagen sea de un pez.",
+        "explicacion": "Esta distincion tiene consecuencias practicas que el examen persigue. Como la salida es una probabilidad, alguien tiene que decidir a partir de que valor se considera pez, y ese valor es el threshold. Cambiar el umbral cambia el comportamiento del modelo sin reentrenarlo: subirlo produce menos falsos positivos pero mas falsos negativos. Toda la teoria de la curva ROC y el AUC nace de esta propiedad.",
+        "glosario_refs": ["probabilistico", "inferencia", "threshold", "confidence-score", "auc"],
+        "puntos_clave": [
+          "Las inferencias de ML no siempre son exactas",
+          "Un threshold convierte la probabilidad en una decision binaria",
+          "Con un umbral de 0,6, el modelo clasifica como pez cuando tiene al menos un 60% de confianza",
+          "El AUC mide el rendimiento del modelo a lo largo de todo el rango de umbrales"
+        ],
+        "descartes": [
+          {
+            "opcion": "Una etiqueta definitiva pez o no pez",
+            "por_que_no": "Esa etiqueta es el resultado de aplicar un umbral a la probabilidad, no la salida directa del modelo."
+          }
+        ],
+        "tip_examen": "Los servicios preentrenados de AWS exponen esto de forma visible. En Amazon Comprehend, por ejemplo, tu fijas el nivel minimo de confianza por encima del cual se elimina automaticamente una entidad de PII."
+      },
+      "servicios_aws": ["Amazon Comprehend"],
+      "tags": ["probabilistico", "threshold"],
+      "relacionadas": ["D1-T1.3-L7-002", "D1-T1.1-L1-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 3"
+    },
+    {
+      "id": "D1-T1.1-L4-001",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Overfitting",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Que es el overfitting, como se ilustra con el ejemplo del pez fuera del agua y como se corrige normalmente?",
+      "reverso": {
+        "respuesta_corta": "Ocurre cuando el modelo rinde mejor con los datos de entrenamiento que con datos nuevos, y se dice que no generaliza bien. El modelo entrenado solo con peces nadando en el agua puede no reconocer como pez la imagen de un pez fuera del agua. Normalmente se corrige entrenandolo con datos mas diversos.",
+        "explicacion": "El modelo se ajusto demasiado bien a los datos de entrenamiento, asi que cuando ve algo ligeramente distinto asigna una probabilidad baja. La raiz del problema es que aprendio correlaciones accidentales del dataset (todos los peces aparecian rodeados de agua azul) en lugar de la caracteristica esencial. De ahi que la cura sea diversidad: mostrarle peces en contextos variados obliga al modelo a quedarse con lo que de verdad define a un pez.",
+        "glosario_refs": ["overfitting", "noise", "underfitting", "inferencia"],
+        "puntos_clave": [
+          "Rinde mejor en entrenamiento que con datos nuevos: no generaliza bien",
+          "La mejor correccion habitual es entrenar con datos mas diversos",
+          "Entrenar demasiado tiempo tambien produce overfitting, porque el modelo empieza a sobreponderar features sin importancia llamadas noise"
+        ],
+        "descartes": [
+          {
+            "opcion": "Underfitting",
+            "por_que_no": "El underfitting da resultados inexactos tanto con los datos de entrenamiento como con los nuevos. El overfitting acierta en entrenamiento y falla fuera."
+          }
+        ],
+        "tip_examen": "La prueba diagnostica es comparar el rendimiento en entrenamiento y en datos nuevos: si hay brecha, es overfitting; si es malo en ambos, es underfitting."
+      },
+      "servicios_aws": [],
+      "tags": ["overfitting", "calidad del modelo"],
+      "relacionadas": ["D1-T1.1-L4-002", "D1-T1.1-L4-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-002",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Underfitting",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Que es el underfitting y cuales son sus dos causas tipicas?",
+      "reverso": {
+        "respuesta_corta": "Es un error que ocurre cuando el modelo no logra determinar una relacion significativa entre los datos de entrada y de salida. Da resultados inexactos tanto con el dataset de entrenamiento como con datos nuevos. Sus dos causas tipicas son no haber entrenado el modelo suficiente tiempo o no haberlo entrenado con un dataset suficientemente grande.",
+        "explicacion": "El modelo con underfitting no aprendio nada util todavia. El sintoma que lo distingue del overfitting es que falla en todas partes, incluso en los datos que ya vio. Y como una de sus causas es entrenar poco tiempo mientras que entrenar demasiado causa overfitting, los cientificos de datos buscan el punto justo de tiempo de entrenamiento donde el modelo no subajusta ni sobreajusta.",
+        "glosario_refs": ["underfitting", "overfitting", "noise", "entrenamiento"],
+        "puntos_clave": [
+          "Resultados inexactos tanto en entrenamiento como en datos nuevos",
+          "Causas: entrenamiento demasiado corto o dataset demasiado pequeno",
+          "Existe un punto optimo de tiempo de entrenamiento entre underfitting y overfitting"
+        ],
+        "descartes": [],
+        "tip_examen": "Memoriza la asimetria: entrenar poco produce underfitting, entrenar demasiado produce overfitting. El examen suele preguntar por esa relacion con el tiempo."
+      },
+      "servicios_aws": [],
+      "tags": ["underfitting", "calidad del modelo"],
+      "relacionadas": ["D1-T1.1-L4-001", "D1-T1.1-L4-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-003",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Noise",
+      "tipo": "definicion",
+      "nivel": 3,
+      "frente": "Que es el noise en el contexto del entrenamiento y con cual de los dos errores del modelo se relaciona?",
+      "reverso": {
+        "respuesta_corta": "Son features sin importancia real que el modelo empieza a sobreponderar si se lo entrena demasiado tiempo. Es otra forma de overfitting.",
+        "explicacion": "Cuando el modelo ya extrajo todo el patron genuino de los datos, seguir entrenando lo lleva a buscar senal donde solo hay coincidencias. Esas coincidencias son el noise, y el modelo las incorpora como si fueran informativas. El resultado es el mismo que en cualquier overfitting: excelente rendimiento en entrenamiento y mal rendimiento con datos nuevos, porque esas coincidencias no se repiten fuera del dataset original.",
+        "glosario_refs": ["noise", "overfitting", "feature", "peso", "sesgo"],
+        "puntos_clave": [
+          "Aparece al entrenar durante demasiado tiempo",
+          "El modelo sobreenfatiza features poco importantes",
+          "Es otra forma de overfitting",
+          "Si un modelo muestra sesgo, los cientificos de datos pueden ajustar directamente el peso de las features que introducen noise"
+        ],
+        "descartes": [],
+        "tip_examen": "El noise conecta dos temas del examen: es una via al overfitting y tambien la palanca para mitigar sesgo, ajustando el peso de las features implicadas."
+      },
+      "servicios_aws": [],
+      "tags": ["noise", "overfitting"],
+      "relacionadas": ["D1-T1.1-L4-001", "D1-T1.1-L4-006"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-004",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Overfitting frente a underfitting",
+      "tipo": "escenario_examen",
+      "nivel": 4,
+      "frente": "Un modelo alcanza 98% de exactitud con los datos de entrenamiento pero 61% con datos nuevos. Que problema tiene y que harias? Y si diera 62% en ambos?",
+      "reverso": {
+        "respuesta_corta": "El primer caso es overfitting: se corrige entrenando con datos mas diversos, o entrenando menos tiempo si la causa fue el exceso de entrenamiento. El segundo caso es underfitting: se corrige entrenando mas tiempo o con un dataset mas grande.",
+        "explicacion": "La brecha entre entrenamiento y datos nuevos es el diagnostico. Si hay brecha, el modelo memorizo en lugar de generalizar, y el remedio apunta a la diversidad de los datos. Si no hay brecha y ambos numeros son malos, el modelo todavia no encontro una relacion significativa entre entrada y salida, y el remedio apunta a mas entrenamiento o mas datos.",
+        "glosario_refs": ["overfitting", "underfitting", "noise", "split-datos"],
+        "puntos_clave": [
+          "Overfitting: alto en entrenamiento, bajo fuera; el modelo no generaliza bien",
+          "Underfitting: bajo en ambos; no hay relacion significativa aprendida",
+          "Las direcciones de correccion son opuestas respecto al tiempo de entrenamiento",
+          "Poder hacer este diagnostico es la razon de reservar un dataset de evaluacion separado del de entrenamiento"
+        ],
+        "descartes": [
+          {
+            "opcion": "Los dos casos se arreglan con mas datos de entrenamiento",
+            "por_que_no": "Para underfitting, mas datos ayuda. Para overfitting, lo que importa no es la cantidad sino la diversidad: mas ejemplos del mismo tipo no corrigen el problema."
+          }
+        ],
+        "tip_examen": "Este escenario tambien aparece en el Dominio 4 con enfoque de equidad: el overfitting se vuelve un problema cuando el dataset de entrenamiento no representa al mundo real, y los grupos mal representados sufren peores resultados."
+      },
+      "servicios_aws": [],
+      "tags": ["overfitting", "underfitting", "diagnostico"],
+      "relacionadas": ["D1-T1.1-L4-001", "D1-T1.1-L4-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-005",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Sesgo del modelo",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Que es el sesgo (bias) en un modelo de ML?",
+      "reverso": {
+        "respuesta_corta": "Es cuando hay disparidades en el rendimiento de un modelo entre distintos grupos, de modo que los resultados quedan sesgados a favor o en contra de un desenlace para una clase determinada.",
+        "explicacion": "El sesgo no es un error de calculo, es un error de distribucion. El modelo puede estar funcionando exactamente como su entrenamiento indica y aun asi ser sesgado, porque lo que aprendio refleja un desequilibrio en los datos. Por eso el sesgo no se detecta mirando la exactitud global: un modelo puede tener buena exactitud total y ser sistematicamente peor para un grupo concreto.",
+        "glosario_refs": ["sesgo", "desbalance-de-clases", "equidad", "restricciones-de-equidad"],
+        "puntos_clave": [
+          "Se manifiesta como disparidad de rendimiento entre grupos",
+          "La calidad de un modelo depende de la calidad y la cantidad de los datos subyacentes",
+          "Una causa principal es el desbalance de clases en los datos de entrenamiento"
+        ],
+        "descartes": [],
+        "tip_examen": "En el Dominio 4 el sesgo se convierte en una dimension de la IA responsable, y la equidad de un modelo se mide por el sesgo y la varianza de los resultados entre grupos."
+      },
+      "servicios_aws": ["Amazon SageMaker Clarify"],
+      "tags": ["sesgo", "equidad"],
+      "relacionadas": ["D1-T1.1-L4-006", "D1-T1.1-L4-007"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-006",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Ejemplo de sesgo en aprobacion de prestamos",
+      "tipo": "caso_de_uso",
+      "nivel": 3,
+      "frente": "Explica el ejemplo del curso sobre sesgo en un modelo de aprobacion de prestamos. Que features intervienen y como surge el sesgo?",
+      "reverso": {
+        "respuesta_corta": "La solicitud contiene features como ingreso, historial laboral, edad, genero y ubicacion. Si en los datos de entrenamiento no hay ninguna solicitud aprobada de mujeres de 25 anos que vivan en Wisconsin, el modelo puede aprender que esas solicitudes no deben aprobarse, aunque otras features como su ingreso e historial laboral las calificarian.",
+        "explicacion": "Este ejemplo muestra como el sesgo surge de una ausencia, no de una instruccion. Nadie le dijo al modelo que discriminara. Simplemente no vio contraejemplos para esa combinacion de features, y en la ausencia de evidencia contraria aprendio la regla que los datos sugerian. De ahi la conclusion practica del curso: si los datos de entrenamiento no tienen solicitudes de una poblacion diversa, el modelo puede aprender un patron sesgado contra un grupo concreto.",
+        "glosario_refs": ["sesgo", "feature", "desbalance-de-clases", "equidad", "etiquetado"],
+        "puntos_clave": [
+          "Los datos de entrenamiento contienen ejemplos de solicitudes que deben aprobarse y otras que no",
+          "El sesgo surge de la falta de representacion, no de una regla explicita",
+          "Las features legitimas como ingreso e historial laboral quedan anuladas por el patron sesgado",
+          "Una mitigacion es eliminar por completo la consideracion del genero por parte del modelo"
+        ],
+        "descartes": [],
+        "tip_examen": "Este ejemplo se extiende en el Dominio 4: alli el mismo caso ilustra las metricas de sesgo de SageMaker Clarify, como la disparidad demografica y la diferencia de recall entre clases."
+      },
+      "servicios_aws": ["Amazon SageMaker Clarify"],
+      "tags": ["sesgo", "equidad", "casos de uso"],
+      "relacionadas": ["D1-T1.1-L4-005", "D1-T1.1-L4-007"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-007",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Mitigacion del sesgo",
+      "tipo": "secuencia",
+      "nivel": 3,
+      "frente": "Que tres medidas plantea el curso para manejar el sesgo, y en que momento del proyecto debe hacerse cada una?",
+      "reverso": {
+        "respuesta_corta": "Primero, identificar las restricciones de equidad al comienzo, antes de crear el modelo. Segundo, inspeccionar y evaluar los datos de entrenamiento para detectar sesgo potencial. Y tercero, evaluar los modelos de forma continua revisando sus resultados en busca de equidad.",
+        "explicacion": "El orden importa tanto como las medidas. Las restricciones de equidad, como la no discriminacion por edad o sexo, tienen que definirse antes de crear el modelo, porque condicionan que datos se recogen y que features se usan; intentar imponerlas al final obliga a rehacer trabajo. La inspeccion de datos viene despues porque los sesgos del dataset se convierten en sesgos de la salida. Y la evaluacion es continua porque los datos del mundo cambian.",
+        "glosario_refs": ["restricciones-de-equidad", "sesgo", "equidad", "peso", "noise"],
+        "puntos_clave": [
+          "Las restricciones de equidad como discriminacion por edad y sexo se identifican al principio, antes de crear el modelo",
+          "La calidad del modelo depende de la calidad y la cantidad de los datos",
+          "Si un modelo muestra sesgo, los cientificos de datos pueden ajustar directamente el peso de las features que introducen noise",
+          "Por ejemplo, se puede eliminar por completo la consideracion del genero"
+        ],
+        "descartes": [],
+        "tip_examen": "Si una pregunta plantea mitigar sesgo ya con el modelo entrenado, la respuesta esta entre ajustar pesos de features, remover la feature problematica o reentrenar con datos mas representativos. Si el proyecto aun no empieza, la respuesta es definir restricciones de equidad."
+      },
+      "servicios_aws": ["Amazon SageMaker Clarify"],
+      "tags": ["sesgo", "equidad", "mitigacion"],
+      "relacionadas": ["D1-T1.1-L4-006", "D1-T1.1-L4-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L4-008",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 4,
+      "tema": "Overfitting como fuente de inequidad",
+      "tipo": "trampa_examen",
+      "nivel": 5,
+      "frente": "Como pueden el overfitting y el underfitting producir resultados injustos para un grupo de personas?",
+      "reverso": {
+        "respuesta_corta": "El overfitting se vuelve un problema cuando el dataset de entrenamiento no es representativo del mundo real: el modelo solo rinde bien con entradas parecidas a los datos de entrenamiento, asi que los grupos mal representados tendran potencialmente peores resultados. El underfitting puede ocurrir solo para algunos grupos cuando no hubo suficientes datos de entrenamiento que coincidieran con sus caracteristicas.",
+        "explicacion": "Este es el puente entre los errores tecnicos del modelo y la equidad, y es el matiz que el examen persigue. Normalmente se piensa en overfitting y underfitting como propiedades globales del modelo, pero pueden ocurrir de forma localizada: el modelo generaliza bien para el grupo mayoritario y mal para el minoritario. La consecuencia practica es grave, porque la exactitud global puede verse bien y ocultar el problema.",
+        "glosario_refs": ["overfitting", "underfitting", "desbalance-de-clases", "equidad", "sesgo", "accuracy"],
+        "puntos_clave": [
+          "El overfitting duele cuando el dataset no representa al mundo real",
+          "El underfitting puede afectar solo a ciertos grupos por falta de datos con sus caracteristicas",
+          "La exactitud de un modelo tambien puede mostrar sesgo, al ser mas exacta para algunos grupos y menos para otros",
+          "La confianza del usuario se erode por salidas sesgadas o inconsistentes"
+        ],
+        "descartes": [],
+        "tip_examen": "Ejemplo del Dominio 4 que cierra la idea: si las mujeres son el 32,4% de los datos de entrenamiento y los hombres el 67,6%, el modelo rinde mejor con hombres y puede tener mayor tasa de error con mujeres, lo que en un diagnostico medico significa mas diagnosticos incorrectos para ellas."
+      },
+      "servicios_aws": [],
+      "tags": ["equidad", "overfitting", "underfitting", "sesgo"],
+      "relacionadas": ["D1-T1.1-L4-004", "D1-T1.1-L4-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 4"
+    },
+    {
+      "id": "D1-T1.1-L5-001",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Estructura de una red neuronal profunda",
+      "tipo": "arquitectura",
+      "nivel": 2,
+      "frente": "Describe la estructura de una red neuronal profunda y como se entrena.",
+      "reverso": {
+        "respuesta_corta": "Esta formada por capas de nodos: una capa de entrada, varias capas ocultas y una capa de salida. Cada nodo asigna de forma autonoma pesos a cada feature. La informacion fluye hacia adelante, de la entrada a la salida. Durante el entrenamiento se calcula la diferencia entre la salida predicha y la real, y los pesos de las neuronas se ajustan repetidamente para minimizar el error.",
+        "explicacion": "La analogia biologica explica el diseno: en el cerebro, las neuronas forman una red compleja donde se envian senales electricas entre si para procesar informacion, y en deep learning se usan modulos de software llamados nodos para simular ese comportamiento. Lo importante conceptualmente es la frase de forma autonoma: nadie le dice a cada nodo cuanta importancia dar a cada feature, eso emerge del entrenamiento.",
+        "glosario_refs": ["red-neuronal", "capas-red-neuronal", "nodo", "peso", "deep-learning", "feature"],
+        "puntos_clave": [
+          "Capa de entrada, varias capas ocultas y capa de salida",
+          "Cada nodo asigna pesos a cada feature de forma autonoma",
+          "El flujo de informacion va hacia adelante, de entrada a salida",
+          "Los pesos se ajustan repetidamente para minimizar el error entre la prediccion y el valor real"
+        ],
+        "descartes": [],
+        "tip_examen": "Cuantas capas y cuantos nodos tendra la red es un hiperparametro, no algo que el modelo aprenda. Lo fija el cientifico de datos antes de entrenar."
+      },
+      "servicios_aws": [],
+      "tags": ["redes neuronales", "deep learning"],
+      "relacionadas": ["D1-T1.1-L2-010", "D1-T1.1-L5-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-002",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Por que el deep learning se volvio viable",
+      "tipo": "por_que",
+      "nivel": 3,
+      "frente": "El concepto de deep learning con redes neuronales existe desde hace tiempo. Por que solo recientemente se volvio el enfoque estandar para computer vision?",
+      "reverso": {
+        "respuesta_corta": "Porque la potencia de computo necesaria no era viable para la mayoria de las empresas hasta la llegada del computo en la nube de bajo costo. Al poder cualquiera usar recursos de computo potentes en la nube, las redes neuronales se volvieron el enfoque algoritmico estandar para computer vision.",
+        "explicacion": "La idea no era nueva; lo que faltaba era la infraestructura. Entrenar una red neuronal implica ajustar millones de pesos a lo largo de muchisimas iteraciones sobre datasets enormes, y eso exige hardware que antes solo estaba al alcance de organizaciones muy grandes. La nube cambio la ecuacion al convertir una inversion de capital en un gasto por uso.",
+        "glosario_refs": ["deep-learning", "red-neuronal", "gpu", "computer-vision"],
+        "puntos_clave": [
+          "El cuello de botella historico fue el costo del computo, no la teoria",
+          "El pre-training de modelos grandes requiere gran cantidad de computo y el uso de GPUs",
+          "La contrapartida sigue existiendo: la infraestructura para entrenar deep learning repetidamente sobre datasets tan grandes cuesta mas que el enfoque tradicional"
+        ],
+        "descartes": [],
+        "tip_examen": "Este argumento reaparece en el Dominio 2 y 3 como razon para no entrenar tu propio modelo: casi nadie entrena su propio LLM por el costo de investigacion, datos, tiempo y hardware."
+      },
+      "servicios_aws": [],
+      "tags": ["deep learning", "computo", "nube"],
+      "relacionadas": ["D1-T1.1-L5-003", "D1-T1.3-L1-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-003",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Ventaja del deep learning en computer vision",
+      "tipo": "comparacion",
+      "nivel": 3,
+      "frente": "Cual es la gran ventaja de los modelos de deep learning para computer vision, y cual es su contrapartida?",
+      "reverso": {
+        "respuesta_corta": "La ventaja es que no necesitan que se les entreguen las features relevantes: pueden identificar patrones en las imagenes y extraer por si mismos las features importantes. La contrapartida es que pueden necesitar millones de imagenes para detectar y etiquetar un objeto con exactitud, y la infraestructura para entrenarlos costara mas que el enfoque tradicional.",
+        "explicacion": "El intercambio es trabajo humano por computo. En el enfoque tradicional, una persona decide que caracteristicas miden algo relevante y etiqueta miles de ejemplos; eso es esfuerzo humano costoso pero entrena con menos datos. El deep learning elimina ese trabajo de seleccion de features, pero lo paga con volumen de datos y potencia de computo. Que enfoque conviene depende de cual de los dos recursos tengas.",
+        "glosario_refs": ["deep-learning", "feature", "computer-vision", "gpu", "etiquetado"],
+        "puntos_clave": [
+          "Los modelos de deep learning aprenden patrones por si mismos, asi que requieren menos trabajo de seleccion y extraccion de features",
+          "El enfoque tradicional de computer vision requeria mucho esfuerzo humano para etiquetar miles de imagenes",
+          "Sus costos de infraestructura son significativamente mas altos"
+        ],
+        "descartes": [],
+        "tip_examen": "Si la pregunta contrapone esfuerzo humano de feature engineering frente a costo de infraestructura, esta preguntando por esta comparacion entre ML tradicional y deep learning."
+      },
+      "servicios_aws": [],
+      "tags": ["deep learning", "features", "costos"],
+      "relacionadas": ["D1-T1.1-L5-004", "D1-T1.1-L5-002"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-004",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "ML tradicional frente a deep learning",
+      "tipo": "escenario_examen",
+      "nivel": 4,
+      "frente": "Una empresa de telefonia quiere predecir cuando un cliente cambiara de operador usando datos historicos de churn. Otra quiere analizar menciones en redes sociales para determinar el sentimiento del usuario. Que enfoque corresponde a cada una y por que?",
+      "reverso": {
+        "respuesta_corta": "Para predecir churn, machine learning tradicional, porque los datos son estructurados y etiquetados. Para el sentimiento en redes sociales, deep learning, porque los datos son no estructurados y hace falta identificar relaciones complejas entre palabras.",
+        "explicacion": "El criterio de decision es el tipo de datos a procesar. Los algoritmos de ML tradicional rinden bien y son eficientes identificando patrones en datos estructurados y etiquetados, que es el caso de una tabla de clientes con su historial. Las soluciones de deep learning son mas adecuadas para datos no estructurados como imagenes, video y texto, donde la tarea requiere captar la relacion compleja entre pixeles y palabras.",
+        "glosario_refs": ["machine-learning", "deep-learning", "datos-estructurados", "datos-no-estructurados", "nlp", "amazon-comprehend"],
+        "puntos_clave": [
+          "ML tradicional: datos estructurados y etiquetados; ejemplos de tareas, clasificacion y sistemas de recomendacion",
+          "Deep learning: datos no estructurados; ejemplos de tareas, clasificacion de imagenes y NLP",
+          "Ambos usan algoritmos estadisticos, pero solo el deep learning usa redes neuronales"
+        ],
+        "descartes": [
+          {
+            "opcion": "Deep learning para el caso de churn",
+            "por_que_no": "Funcionaria, pero es innecesariamente costoso. Con datos estructurados y etiquetados, el ML tradicional rinde bien y es mas eficiente."
+          }
+        ],
+        "tip_examen": "En AWS, el caso del sentimiento ni siquiera requiere construir un modelo: Amazon Comprehend ya viene preentrenado para clasificar el sentimiento de comentarios de clientes."
+      },
+      "servicios_aws": ["Amazon Comprehend"],
+      "tags": ["decision", "deep learning", "ML tradicional"],
+      "relacionadas": ["D1-T1.1-L5-003", "D1-T1.2-L3-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-005",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Tareas donde destaca el deep learning",
+      "tipo": "por_que",
+      "nivel": 2,
+      "frente": "Por que el deep learning destaca en clasificacion de imagenes y en procesamiento de lenguaje natural?",
+      "reverso": {
+        "respuesta_corta": "Porque en esas tareas hace falta identificar la relacion compleja entre los objetos de datos: entre los pixeles en el caso de las imagenes y entre las palabras en el caso del lenguaje.",
+        "explicacion": "La palabra que justifica el deep learning es complejidad relacional. Un pixel aislado no significa nada, y una palabra aislada tampoco; el significado esta en como se combinan, y esas combinaciones son no lineales y de muy alta dimension. La estructura en capas de una red neuronal es justamente lo que permite construir representaciones cada vez mas abstractas de esas relaciones, algo que un algoritmo estadistico simple no puede hacer.",
+        "glosario_refs": ["deep-learning", "red-neuronal", "nlp", "computer-vision", "capas-red-neuronal"],
+        "puntos_clave": [
+          "La clave es la necesidad de identificar relaciones complejas entre objetos de datos",
+          "En imagenes esas relaciones son entre pixeles; en lenguaje, entre palabras",
+          "Un algoritmo simple no puede capturar interacciones no lineales complejas"
+        ],
+        "descartes": [],
+        "tip_examen": "Este mismo razonamiento explica en el Dominio 4 por que las redes neuronales no son interpretables: precisamente esas relaciones complejas distribuidas son lo que nadie puede leer directamente."
+      },
+      "servicios_aws": [],
+      "tags": ["deep learning", "NLP", "computer vision"],
+      "relacionadas": ["D1-T1.1-L5-001", "D1-T1.1-L5-004"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-006",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Fundamento tecnico de la IA generativa",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Sobre que se construye la IA generativa y que hace un transformer con un prompt?",
+      "reverso": {
+        "respuesta_corta": "Se logra usando modelos de deep learning preentrenados con datasets extremadamente grandes que contienen cadenas de texto, o en terminos de IA, secuencias. Esos modelos usan redes neuronales transformer, que convierten una secuencia de entrada, que en IA generativa se llama prompt, en una secuencia de salida, que es la respuesta al prompt.",
+        "explicacion": "Vale la pena notar la reduccion conceptual: generar texto es, mecanicamente, transformar una secuencia en otra secuencia. El prompt no es una orden que el modelo interpreta como lo haria una persona, es una secuencia de entrada que condiciona la secuencia de salida. Entender esto explica por que la forma del prompt cambia tanto el resultado, que es la base del prompt engineering en el Dominio 3.",
+        "glosario_refs": ["ia-generativa", "transformer", "prompt", "completion", "secuencia", "deep-learning"],
+        "puntos_clave": [
+          "Los modelos se preentrenan con datasets extremadamente grandes de secuencias",
+          "El transformer convierte la secuencia de entrada en secuencia de salida",
+          "En IA generativa, la secuencia de entrada se llama prompt y la salida es la respuesta o completion"
+        ],
+        "descartes": [],
+        "tip_examen": "El paper que introdujo la arquitectura transformer es Attention Is All You Need, de 2017. El examen puede mencionarlo por su nombre."
+      },
+      "servicios_aws": ["Amazon Bedrock"],
+      "tags": ["IA generativa", "transformer", "prompt"],
+      "relacionadas": ["D1-T1.1-L5-007", "D1-T1.1-L1-011"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-007",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Por que los transformers reemplazaron a las redes neuronales secuenciales",
+      "tipo": "por_que",
+      "nivel": 3,
+      "frente": "Cual es la innovacion clave de los transformers frente a las redes neuronales anteriores, y que consecuencia practica tiene?",
+      "reverso": {
+        "respuesta_corta": "Las redes neuronales anteriores procesan los elementos de una secuencia de forma secuencial, una palabra a la vez. Los transformers procesan la secuencia en paralelo, lo que acelera el entrenamiento y permite usar datasets mucho mas grandes.",
+        "explicacion": "La consecuencia practica es la que explica todo el fenomeno de los LLM. Si el entrenamiento tiene que avanzar palabra por palabra, el tiempo crece con la longitud del texto y hay un techo practico al tamano del dataset. Al procesar en paralelo, ese techo se levanta: se pueden aprovechar GPUs a fondo y entrenar con volumenes de texto antes impensables. De ahi salen los modelos con miles de millones de features.",
+        "glosario_refs": ["transformer", "red-neuronal", "llm", "gpu", "secuencia"],
+        "puntos_clave": [
+          "Las redes neuronales clasicas procesan la secuencia elemento por elemento",
+          "Los transformers la procesan en paralelo",
+          "Consecuencia: entrenamiento mas rapido y datasets mucho mayores",
+          "Los LLM contienen muchos miles de millones de features, lo que captura un rango amplio del conocimiento humano"
+        ],
+        "descartes": [],
+        "tip_examen": "En el Dominio 2 se profundiza en el mecanismo que lo hace posible: el self-attention, que pesa la importancia de distintas partes de la entrada al generar cada token de salida."
+      },
+      "servicios_aws": [],
+      "tags": ["transformer", "paralelismo", "LLM"],
+      "relacionadas": ["D1-T1.1-L5-006", "D1-T1.1-L5-008"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-008",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Capacidades de los LLM",
+      "tipo": "definicion",
+      "nivel": 2,
+      "frente": "Por que los LLM son tan flexibles en las tareas que pueden realizar, y que tareas concretas hacen bien?",
+      "reverso": {
+        "respuesta_corta": "Porque contienen muchos miles de millones de features, lo que captura un rango amplio del conocimiento humano. Con todo ese entrenamiento resultan muy flexibles y superan a otros enfoques de ML en procesamiento de lenguaje natural: leen articulos largos y los resumen, generan texto similar al humano, traducen, escriben historias, cartas, articulos y poesia originales, y escriben codigo para desarrolladores.",
+        "explicacion": "La flexibilidad es consecuencia directa de la escala. Un modelo entrenado para una tarea concreta solo sabe esa tarea; un modelo con miles de millones de features entrenado sobre texto muy variado absorbio de paso estructuras de resumen, de traduccion, de narracion y de codigo. Por eso el mismo modelo puede hacer cosas para las que nadie lo entreno especificamente.",
+        "glosario_refs": ["llm", "ia-generativa", "nlp", "amazon-bedrock", "foundation-model"],
+        "puntos_clave": [
+          "Destacan entendiendo lenguaje humano, asi que pueden leer articulos largos y resumirlos",
+          "Generan texto parecido al que escribiria una persona, lo que los hace buenos traduciendo y escribiendo contenido original",
+          "Tambien conocen lenguajes de programacion y pueden escribir codigo",
+          "Superan a otros enfoques de ML en procesamiento de lenguaje natural"
+        ],
+        "descartes": [],
+        "tip_examen": "El curso invita a probar Amazon Bedrock gratis construyendo una app propia en partyrock.aws. PartyRock es el playground construido sobre Bedrock."
+      },
+      "servicios_aws": ["Amazon Bedrock"],
+      "tags": ["LLM", "casos de uso", "IA generativa"],
+      "relacionadas": ["D1-T1.1-L5-007", "D1-T1.2-L4-005"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-009",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Jerarquia completa IA, ML, deep learning, IA generativa",
+      "tipo": "trampa_examen",
+      "nivel": 3,
+      "frente": "Ordena de mas amplio a mas especifico: deep learning, IA generativa, inteligencia artificial y machine learning. Y di que distingue a cada nivel del anterior.",
+      "reverso": {
+        "respuesta_corta": "Inteligencia artificial contiene al machine learning, que contiene al deep learning, que contiene a la IA generativa. El ML se distingue por aprender de datos en lugar de seguir instrucciones explicitas; el deep learning por usar redes neuronales en capas; y la IA generativa por crear contenido original en lugar de clasificar o predecir.",
+        "explicacion": "Esta jerarquia es una de las cosas que el examen verifica de forma mas directa, y conviene poder justificar cada salto y no solo recitar el orden. Cada nivel anade una restriccion: de instrucciones explicitas a aprender de datos, de algoritmos estadisticos varios a redes neuronales especificamente, y de analizar lo existente a generar lo nuevo.",
+        "glosario_refs": ["inteligencia-artificial", "machine-learning", "deep-learning", "ia-generativa", "red-neuronal"],
+        "puntos_clave": [
+          "La IA es el campo completo: resolver problemas cognitivos",
+          "El ML es una rama de la IA que usa datos y algoritmos para imitar como aprenden los humanos",
+          "El deep learning es un tipo de ML que usa capas de redes neuronales",
+          "La IA generativa es un subconjunto del deep learning que genera contenido original",
+          "Ambos tipos de ML usan algoritmos estadisticos, pero solo el deep learning usa redes neuronales"
+        ],
+        "descartes": [
+          {
+            "opcion": "El deep learning y el machine learning son categorias paralelas",
+            "por_que_no": "El deep learning es un tipo de machine learning, no una alternativa a el. Es una relacion de contenencia."
+          },
+          {
+            "opcion": "La IA generativa es un tipo de machine learning pero no de deep learning",
+            "por_que_no": "El curso la define explicitamente como un subconjunto del deep learning, porque se construye sobre modelos de deep learning preentrenados."
+          }
+        ],
+        "tip_examen": "Esta es una pregunta de regalo si la tienes clara y una trampa facil si no. Memoriza la contenencia en las dos direcciones."
+      },
+      "servicios_aws": [],
+      "tags": ["jerarquia", "definiciones", "fundamentos"],
+      "relacionadas": ["D1-T1.1-L1-001", "D1-T1.1-L1-003"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    },
+    {
+      "id": "D1-T1.1-L5-010",
+      "dominio": 1,
+      "task_statement": "1.1",
+      "leccion": 5,
+      "tema": "Deep learning y feature extraction automatica",
+      "tipo": "comparacion",
+      "nivel": 4,
+      "frente": "Que implica para el trabajo del equipo de datos que los modelos de deep learning aprendan patrones por si mismos?",
+      "reverso": {
+        "respuesta_corta": "Que requieren mucho menos trabajo de seleccion y extraccion de features, porque los modelos autoaprenden los patrones. En cambio, sus costos de infraestructura son significativamente mas altos.",
+        "explicacion": "Este es un intercambio de recursos que conviene tener presente al planear un proyecto. El ML tradicional consume horas de personas expertas decidiendo que features importan y preparandolas. El deep learning traslada ese esfuerzo a la maquina, pero exige volumenes de datos y computo que cuestan dinero. La eleccion correcta depende de que restriccion pesa mas en tu contexto, y por eso ninguna de las dos opciones es siempre la respuesta.",
+        "glosario_refs": ["deep-learning", "feature-engineering", "feature", "gpu", "machine-learning"],
+        "puntos_clave": [
+          "Los modelos de deep learning autoaprenden patrones, asi que no requieren tanto trabajo de seleccion y extraccion de features",
+          "Sus costos de infraestructura son significativamente mas altos",
+          "La decision entre ML tradicional y deep learning depende del tipo de datos que necesites procesar"
+        ],
+        "descartes": [
+          {
+            "opcion": "El deep learning elimina la necesidad de preparar datos",
+            "por_que_no": "Reduce el trabajo de seleccionar y extraer features, pero la preparacion de datos sigue siendo necesaria: limpiar, manejar valores faltantes, eliminar PII y dividir el dataset."
+          }
+        ],
+        "tip_examen": "Ojo con el salto facil de menos feature engineering a mas barato. Es al contrario: el ahorro es en trabajo humano y el sobrecosto en infraestructura."
+      },
+      "servicios_aws": [],
+      "tags": ["deep learning", "feature engineering", "costos"],
+      "relacionadas": ["D1-T1.1-L5-003", "D1-T1.3-L2-007"],
+      "fuente": "DOMAIN 1 (Basic AI concepts and terminologies) - Leccion 5"
+    }
+  ]
+}

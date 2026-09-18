@@ -1,0 +1,202 @@
+{
+  "examen": {
+    "codigo": "AIF-C01",
+    "nombre": "AWS Certified AI Practitioner",
+    "nota": "Los pesos por dominio deben verificarse contra la guia oficial vigente del examen, porque AWS los actualiza."
+  },
+  "version_contenido": "1.0",
+  "dominios": [
+    {
+      "id": 1,
+      "nombre": "Fundamentos de IA y ML",
+      "peso_examen": "20%",
+      "task_statements": [
+        {
+          "id": "1.1",
+          "nombre": "Explicar conceptos y terminologias basicas de IA",
+          "lecciones": [
+            { "n": 1, "titulo": "Que es la IA, ML y deep learning; casos reales por industria; inferencia, anomalias, computer vision, traduccion, NLP y IA generativa" },
+            { "n": 2, "titulo": "Como funciona el machine learning: features, entrenamiento, tipos de datos y su almacenamiento, algoritmo de regresion lineal" },
+            { "n": 3, "titulo": "Model artifacts y opciones de hosting; estilos de aprendizaje supervisado, no supervisado y por refuerzo" },
+            { "n": 4, "titulo": "Errores del modelo: overfitting, underfitting, noise y sesgo" },
+            { "n": 5, "titulo": "Deep learning, redes neuronales, ML tradicional vs deep learning y fundamentos de la IA generativa" }
+          ]
+        },
+        {
+          "id": "1.2",
+          "nombre": "Identificar casos de uso practicos para IA",
+          "lecciones": [
+            { "n": 1, "titulo": "Cuando conviene usar IA y cuando no: costo, interpretabilidad y determinismo" },
+            { "n": 2, "titulo": "Tipos de problema de ML: clasificacion, regresion, clustering y deteccion de anomalias" },
+            { "n": 3, "titulo": "Servicios de IA preentrenados: Rekognition, Textract, Comprehend, Lex y Transcribe" },
+            { "n": 4, "titulo": "Servicios de IA preentrenados: Polly, Kendra, Personalize, Translate, Fraud Detector, Bedrock y SageMaker" },
+            { "n": 5, "titulo": "Aplicaciones de IA en el mundo real: MasterCard, DoorDash, Laredo Petroleum, Booking.com y Pinterest" }
+          ]
+        },
+        {
+          "id": "1.3",
+          "nombre": "Describir el ciclo de desarrollo de ML",
+          "lecciones": [
+            { "n": 1, "titulo": "El ML pipeline como ciclo de vida; definir el objetivo de negocio y decidir entre servicio, modelo preentrenado o modelo propio" },
+            { "n": 2, "titulo": "Recoleccion y preparacion de datos: ETL, EDA, splits, feature engineering y servicios de AWS" },
+            { "n": 3, "titulo": "Entrenar, ajustar y evaluar: parametros, hiperparametros, training jobs, experimentos y AMT" },
+            { "n": 4, "titulo": "Despliegue del modelo y las cuatro opciones de inferencia de SageMaker" },
+            { "n": 5, "titulo": "Monitoreo, data drift y concept drift; MLOps y SageMaker Pipelines" },
+            { "n": 6, "titulo": "Repositorios y orquestacion; matriz de confusion, accuracy, precision, recall y F1" },
+            { "n": 7, "titulo": "AUC y curva ROC, metricas de regresion (MSE, RMSE, MAE) y metricas de negocio" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Fundamentos de IA generativa",
+      "peso_examen": "24%",
+      "task_statements": [
+        {
+          "id": "2.1",
+          "nombre": "Explicar los conceptos basicos de la IA generativa",
+          "lecciones": [
+            { "n": 1, "titulo": "Que es la IA generativa, foundation models, transformers, prompt e in-context learning" },
+            { "n": 2, "titulo": "Tokenizer, vectores, embeddings, self-attention y position embeddings" },
+            { "n": 3, "titulo": "Escala de los modelos, pre-training, unimodal vs multimodal y modelos de difusion" },
+            { "n": 4, "titulo": "Tareas y casos de uso de la IA generativa, incluida la generacion de codigo" },
+            { "n": 5, "titulo": "Ciclo de vida del proyecto de IA generativa y del foundation model" }
+          ]
+        },
+        {
+          "id": "2.2",
+          "nombre": "Describir capacidades y limitaciones de la IA generativa para resolver problemas de negocio",
+          "lecciones": [
+            { "n": 1, "titulo": "Ventajas de la IA generativa y sus limites; la prueba del nino de 10 anos" },
+            { "n": 2, "titulo": "Fine-tuning con instrucciones, hallucinations, toxicidad, interpretabilidad y metricas ROUGE y BLEU" },
+            { "n": 3, "titulo": "Criterios de seleccion de modelos generativos y metricas de negocio" }
+          ]
+        },
+        {
+          "id": "2.3",
+          "nombre": "Describir infraestructura y tecnologias de AWS para construir aplicaciones de IA generativa",
+          "lecciones": [
+            { "n": 1, "titulo": "Ventajas de AWS, transfer learning, las tres capas del stack de IA generativa y seguridad con AWS Nitro System" },
+            { "n": 2, "titulo": "Modelos de precios, token-based pricing, infraestructura global, SageMaker JumpStart, Bedrock, Titan y PartyRock" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Aplicaciones de foundation models",
+      "peso_examen": "28%",
+      "task_statements": [
+        {
+          "id": "3.1",
+          "nombre": "Describir consideraciones de diseno para aplicaciones que usan foundation models",
+          "lecciones": [
+            { "n": 1, "titulo": "Criterios de seleccion: costo, latencia, modalidad, arquitectura, complejidad y metricas" },
+            { "n": 2, "titulo": "Sesgos, disponibilidad, compatibilidad, personalizacion, interpretabilidad y explicabilidad" },
+            { "n": 3, "titulo": "Parametros de inferencia: temperature, Top K, Top P, longitud y stop sequences; vector databases" },
+            { "n": 4, "titulo": "RAG en detalle, servicios de AWS para embeddings y el rol de los agents" }
+          ]
+        },
+        {
+          "id": "3.2",
+          "nombre": "Elegir tecnicas efectivas de prompt engineering",
+          "lecciones": [
+            { "n": 1, "titulo": "Componentes de un prompt, zero-shot, few-shot, chain-of-thought, prompt tuning y latent space" },
+            { "n": 2, "titulo": "Latent space y hallucinations, buenas practicas y riesgos: prompt injection, jailbreaking, hijacking y poisoning" }
+          ]
+        },
+        {
+          "id": "3.3",
+          "nombre": "Describir el proceso de entrenamiento y fine-tuning de foundation models",
+          "lecciones": [
+            { "n": 1, "titulo": "Pre-training vs fine-tuning, catastrophic forgetting, PEFT, LoRA, ReFT, multitask y domain adaptation" },
+            { "n": 2, "titulo": "Preparacion de datos para fine-tuning, splits, servicios de AWS y continuous pre-training" }
+          ]
+        },
+        {
+          "id": "3.4",
+          "nombre": "Describir metodos para evaluar el rendimiento de foundation models",
+          "lecciones": [
+            { "n": 1, "titulo": "Optimizacion para despliegue, metricas ROUGE y BLEU, benchmarks GLUE, HELM, MMLU y BIG-bench" },
+            { "n": 2, "titulo": "Integracion en aplicaciones, RAG frente al reentrenamiento y capas del stack de la solucion" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Guias de IA responsable",
+      "peso_examen": "14%",
+      "task_statements": [
+        {
+          "id": "4.1",
+          "nombre": "Explicar el desarrollo de sistemas de IA responsables",
+          "lecciones": [
+            { "n": 1, "titulo": "Dimensiones de la IA responsable, sesgo y varianza, desbalance de clases, datasets responsables y seleccion de modelos" },
+            { "n": 2, "titulo": "SageMaker Clarify: deteccion de sesgo, explicabilidad y metricas de sesgo en datos y en modelo entrenado" },
+            { "n": 3, "titulo": "Riesgos de la IA generativa, casos legales reales, Guardrails y evaluacion de LLMs" }
+          ]
+        },
+        {
+          "id": "4.2",
+          "nombre": "Reconocer la importancia de modelos transparentes y explicables",
+          "lecciones": [
+            { "n": 1, "titulo": "Transparencia, interpretabilidad, explicabilidad y sus trade-offs de rendimiento y seguridad" },
+            { "n": 2, "titulo": "Open source, AI service cards, Model Cards, Shapley values, PDP, human-centered AI, Amazon A2I y RLHF" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Seguridad, cumplimiento y gobernanza para soluciones de IA",
+      "peso_examen": "14%",
+      "task_statements": [
+        {
+          "id": "5.1",
+          "nombre": "Explicar metodos para asegurar sistemas de IA",
+          "lecciones": [
+            { "n": 1, "titulo": "Shared Responsibility Model, IAM, root user, MFA y usuarios IAM" },
+            { "n": 2, "titulo": "Politicas IAM, grupos, roles, credenciales temporales y politicas basadas en identidad o recurso" },
+            { "n": 3, "titulo": "Identity federation, IAM Identity Center, CloudTrail, S3 Block Public Access y SageMaker Role Manager" },
+            { "n": 4, "titulo": "Cifrado en reposo y en transito, AWS KMS, Amazon Macie y aislamiento de red con VPC" },
+            { "n": 5, "titulo": "Vulnerabilidades de la IA: data poisoning, adversarial inputs, model inversion, prompt injection y mitigaciones" },
+            { "n": 6, "titulo": "Trazabilidad de artifacts: Model Registry, Model Cards, ML Lineage Tracking, Feature Store y Model Dashboard" }
+          ]
+        },
+        {
+          "id": "5.2",
+          "nombre": "Reconocer regulaciones de gobernanza y cumplimiento para sistemas de IA",
+          "lecciones": [
+            { "n": 1, "titulo": "Shared Responsibility Model aplicado a cumplimiento, AWS Artifact, SOC 2, ISO 27001 y Customer Compliance Center" },
+            { "n": 2, "titulo": "ISO 42001 e ISO 23894, EU AI Act, NIST AI RMF, estimacion de riesgo y Algorithmic Accountability Act" },
+            { "n": 3, "titulo": "AWS Audit Manager, Guardrails for Bedrock, AWS Config, Amazon Inspector y AWS Trusted Advisor" },
+            { "n": 4, "titulo": "LECCION AUSENTE en la transcripcion del curso; el material salta de la leccion 3 a la 5" },
+            { "n": 5, "titulo": "Calidad e integracion de datos, Glue Data Catalog y Data Quality, gobernanza, Lake Formation y clases de almacenamiento de S3" },
+            { "n": 6, "titulo": "Estrategia de gobernanza de IA y Generative AI Security Scoping Matrix" }
+          ]
+        }
+      ]
+    }
+  ],
+  "tipos": [
+    { "id": "definicion", "nombre": "Definicion", "descripcion": "Que es un concepto o termino y como se llama." },
+    { "id": "comparacion", "nombre": "Comparacion", "descripcion": "Diferencia entre dos o mas conceptos que suelen confundirse." },
+    { "id": "servicio_aws", "nombre": "Servicio de AWS", "descripcion": "Que hace un servicio, para que sirve y cuando elegirlo." },
+    { "id": "caso_de_uso", "nombre": "Caso de uso", "descripcion": "Aplicacion practica o ejemplo real mencionado en el curso." },
+    { "id": "escenario_examen", "nombre": "Escenario de examen", "descripcion": "Situacion planteada como la plantearia el examen, con decision a tomar." },
+    { "id": "calculo", "nombre": "Calculo", "descripcion": "Requiere aplicar una formula o hacer una cuenta." },
+    { "id": "por_que", "nombre": "Por que", "descripcion": "Razon o causa detras de un comportamiento o de una decision de diseno." },
+    { "id": "arquitectura", "nombre": "Arquitectura", "descripcion": "Como se conectan los componentes de una solucion y en que orden fluyen." },
+    { "id": "secuencia", "nombre": "Secuencia", "descripcion": "Orden de pasos, fases o etapas." },
+    { "id": "trampa_examen", "nombre": "Trampa de examen", "descripcion": "Matiz, excepcion o confusion frecuente que el examen explota." }
+  ],
+  "niveles": [
+    { "id": 1, "nombre": "Fundamento", "descripcion": "Vocabulario y definiciones que el examen da por sabidas." },
+    { "id": 2, "nombre": "Aplicacion directa", "descripcion": "Saber que servicio o tecnica corresponde a una tarea concreta." },
+    { "id": 3, "nombre": "Distincion fina", "descripcion": "Diferenciar conceptos cercanos que se confunden con facilidad." },
+    { "id": 4, "nombre": "Decision", "descripcion": "Escenarios de eleccion, calculos y arquitecturas." },
+    { "id": 5, "nombre": "Matiz", "descripcion": "Excepciones, trade-offs y trampas tipicas del examen." }
+  ]
+}
