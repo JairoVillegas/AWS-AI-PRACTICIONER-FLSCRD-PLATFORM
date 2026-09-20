@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "dominio", "task_statement", "leccion", "tema",
+    "tipo", "nivel", "frente", "reverso",
+    "servicios_aws", "tags", "relacionadas", "fuente"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^D\\d+-T\\d+\\.\\d+-L\\d+-\\d{3}$"
+    },
+    "dominio": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "task_statement": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "leccion": { "type": "integer", "minimum": 1 },
+    "tema": { "type": "string", "minLength": 1 },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "definicion", "comparacion", "servicio_aws", "caso_de_uso",
+        "escenario_examen", "calculo", "por_que", "arquitectura",
+        "secuencia", "trampa_examen"
+      ]
+    },
+    "nivel": { "type": "integer", "enum": [1, 2, 3, 4, 5] },
+    "frente": { "type": "string", "minLength": 1 },
+    "reverso": { "$ref": "#/definitions/Reverso" },
+    "servicios_aws": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "relacionadas": { "type": "array", "items": { "type": "string" } },
+    "fuente": { "type": "string" }
+  },
+  "definitions": {
+    "Reverso": {
+      "title": "Reverso",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "respuesta_corta", "explicacion", "glosario_refs",
+        "puntos_clave", "descartes", "tip_examen"
+      ],
+      "properties": {
+        "respuesta_corta": { "type": "string", "minLength": 1 },
+        "explicacion": { "type": "string", "minLength": 1 },
+        "glosario_refs": { "type": "array", "items": { "type": "string" } },
+        "puntos_clave": { "type": "array", "items": { "type": "string" } },
+        "descartes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Descarte" }
+        },
+        "tip_examen": { "type": "string" }
+      }
+    },
+    "Descarte": {
+      "title": "Descarte",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["opcion", "por_que_no"],
+      "properties": {
+        "opcion": { "type": "string", "minLength": 1 },
+        "por_que_no": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

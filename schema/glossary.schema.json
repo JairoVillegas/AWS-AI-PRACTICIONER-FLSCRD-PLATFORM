@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Glossary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "nota", "entries"],
+  "properties": {
+    "version": { "type": "string" },
+    "nota": { "type": "string" },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/GlossaryEntry" }
+    }
+  },
+  "definitions": {
+    "GlossaryEntry": {
+      "title": "GlossaryEntry",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "termino", "definicion", "aliases", "dominios"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "termino": { "type": "string", "minLength": 1 },
+        "definicion": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "dominios": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 },
+          "minItems": 1
+        }
+      }
+    }
+  }
+}
